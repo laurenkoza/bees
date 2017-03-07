@@ -1,0 +1,20 @@
+Bees Site Structure Guide:
+
+Pages Controllers:
+app > Http > Controllers
+
+Routes:
+app > Http > routes.php
+
+Pages HTML:
+resources > views
+
+Header and Footer HTML:
+resources > views > layouts
+
+CSS, JS, IMAGES, ETC:
+public folder
+
+DATABASE: 
+db_bees
+
