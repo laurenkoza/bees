@@ -1,0 +1,195 @@
+body {
+  color: #5c5b5c;
+  margin-left: auto;
+  margin-right: auto; }
+
+header {
+  /* The image used */
+  background-image: url("../img/home/splash.jpg");
+  /* Set a specific height */
+  height: 100vh;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center; }
+  header #stickyLogo img {
+    width: 75%;
+    padding-top: 0.625em;
+    padding-bottom: 0.625em; }
+  header #mainNav ul {
+    margin-bottom: 0; }
+    header #mainNav ul li {
+      display: inline-block; }
+      header #mainNav ul li a {
+        text-transform: uppercase;
+        display: block;
+        color: #fff;
+        letter-spacing: 0.0555em;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 700;
+        font-size: 1.125em;
+        padding-top: 0.2777em;
+        padding-bottom: 0.2777em;
+        padding-left: 0.8333em;
+        padding-right: 0.8333em; }
+        header #mainNav ul li a:hover + .hoverBar {
+          width: 100%;
+          left: 0%; }
+      header #mainNav ul li .hoverBar {
+        transition: all 0.5s ease;
+        width: 0%;
+        position: relative;
+        left: 50%;
+        height: 0.1875em;
+        background-color: #fff; }
+  header .hidden img {
+    opacity: 0; }
+  header .stickyNavRow {
+    position: fixed;
+    width: 100%;
+    background-color: #4a494a; }
+  header .staticNav {
+    padding-top: 2.5em;
+    padding-bottom: 3.5em; }
+  header .stickyNav {
+    padding-top: 0.625em; }
+  header #logo img {
+    width: 15%;
+    padding-bottom: 1.5em; }
+  header #logo .divider {
+    height: 0.3125em;
+    background-color: #fff;
+    width: 15%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1.25em;
+    margin-bottom: 1.25em; }
+  header #logo #logoText img {
+    width: 40%;
+    padding-top: 3em;
+    padding-bottom: 2.5em; }
+  header #logo #logoText h2 {
+    color: #fff;
+    font-family: "Montserrat", sans-serif; }
+  header h1 {
+    font-family: "Open Sans", sans-serif;
+    line-height: 1.3em;
+    font-size: 2.75em;
+    font-weight: 300;
+    color: #fff;
+    text-align: center; }
+  header #socialIcons {
+    padding-top: 1.5em;
+    padding-bottom: 0.5em; }
+    header #socialIcons ul {
+      overflow: hidden;
+      list-style-type: none;
+      margin: 0; }
+      header #socialIcons ul li {
+        display: inline;
+        width: 33%;
+        float: left; }
+  header #scrollArrow img {
+    width: 40%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto; }
+
+.mainContent #secondaryNav {
+  padding-top: 6.25em;
+  padding-bottom: 6.25em; }
+  .mainContent #secondaryNav #navHeading {
+    padding-bottom: 3.125em; }
+    .mainContent #secondaryNav #navHeading h3, .mainContent #secondaryNav #navHeading h2 {
+      text-align: center;
+      font-family: "Montserrat", sans-serif;
+      font-size: 3.125em;
+      font-weight: 300; }
+    .mainContent #secondaryNav #navHeading h2 {
+      color: #f6c421;
+      font-weight: 700; }
+  .mainContent #secondaryNav .navLinks {
+    text-align: center; }
+    .mainContent #secondaryNav .navLinks img {
+      width: 35%;
+      padding-bottom: 1.3em; }
+    .mainContent #secondaryNav .navLinks .navLinkHeading {
+      color: #f6c421;
+      font-weight: 700;
+      font-family: "Montserrat", sans-serif;
+      font-size: 2.1875em; }
+    .mainContent #secondaryNav .navLinks .navLinkBody {
+      line-height: 1.35em;
+      font-family: "Open Sans", sans-serif;
+      font-size: 1.25em; }
+.mainContent .infoBlock {
+  padding-top: 2.8125em;
+  padding-bottom: 2.8125em; }
+  .mainContent .infoBlock p {
+    border-left: solid 6px #f6c421;
+    font-size: 1.125em;
+    padding-left: 20px; }
+.mainContent #mission {
+  background-image: url("../img/home/homebg1.jpg"); }
+  .mainContent #mission p {
+    color: #fff; }
+.mainContent #story {
+  background-image: url("../img/home/homebg2.jpg"); }
+  .mainContent #story p {
+    color: #fff; }
+.mainContent .infoHeading {
+  text-transform: uppercase;
+  color: #f6c421;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.1875em;
+  font-weight: 700; }
+.mainContent .contactHeading {
+  letter-spacing: 1px;
+  margin-top: 100px;
+  margin-bottom: 25px;
+  font-weight: 900; }
+.mainContent .paddingFixLeft {
+  padding-left: 0.9375em; }
+.mainContent .paddingFixRight {
+  padding-right: 0.9375em; }
+.mainContent #map iframe {
+  display: block; }
+.mainContent #addressInfo {
+  background-color: #4a494a;
+  color: #f6c421;
+  padding-top: 16px;
+  padding-bottom: 1px;
+  padding-left: 25px; }
+  .mainContent #addressInfo h1 {
+    text-transform: uppercase;
+    font-size: 20px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    margin-bottom: 0; }
+  .mainContent #addressInfo p {
+    font-family: "Open Sans", sans-serif; }
+.mainContent #contactForm form input, .mainContent #contactForm form textarea {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 30px;
+  padding-right: 30px; }
+  .mainContent #contactForm form input ::-webkit-input-placeholder, .mainContent #contactForm form textarea ::-webkit-input-placeholder {
+    text-transform: capitalize; }
+
+footer {
+  background-color: #5c5b5c;
+  text-align: center;
+  padding-top: 2.1875em;
+  padding-bottom: 2.1875em; }
+  footer #copyright {
+    margin: 0;
+    color: #fff;
+    font-family: "Open Sans", sans-serif;
+    font-size: 0.8125em; }
+
+::-webkit-input-placeholder {
+  text-transform: capitalize; }
+
+/*# sourceMappingURL=app.css.map */

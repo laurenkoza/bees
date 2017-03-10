@@ -12,7 +12,7 @@ class LearnController extends Controller{
 		//return "Learn index page!";
 		$facts = DB::select('SELECT * FROM tbl_faq');
 		$factDump = Response::json($facts);
-		return view('learn', ['title' => "Welcome to Heff's Hives", 'facts' => $factDump]);
+		return view('learn', ['title' => "Welcome to Heff's Hives", 'facts' => $factDump, 'header' => "Through nurture<br>we flourish"]);
 	}
 
 	public function getBlog(){

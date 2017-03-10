@@ -7,7 +7,7 @@ class ContactController extends Controller{
 
 	public function getIndex(){
 		//return "Working Home page!";
-		return view('contact', ['title' => "Contact Form"]);
+		return view('contact', ['title' => "Contact", 'header' => "Have questions?<br>we have answers."]);
 	}
 
 //Currently, function below is active in the Routes file
@@ -34,7 +34,7 @@ class ContactController extends Controller{
 		    //            		->from($data['email']);
 		    //});
 		    return 'email sent';
-		}		
+		}
 		return redirect()->back()->withErrors($validator->errors())->withInput();
 	}*/
 }

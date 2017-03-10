@@ -1,0 +1,349 @@
+//font families
+$headingFonts: 'Montserrat', sans-serif;
+$bodyFonts: 'Open Sans', sans-serif;
+
+//colors
+$yellow: #f6c421;
+$grey: #5c5b5c;
+
+//parallaxing header
+body {
+  color: $grey;
+  // width: 1440px; //delete later
+  margin: {
+    left: auto;
+    right: auto;
+  }
+}
+header {
+  /* The image used */
+  background-image: url('../img/home/splash.jpg');
+  /* Set a specific height */
+  height: 100vh;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  #stickyLogo {
+    img {
+      width: 75%;
+      padding: {
+        top: 0.625em;//10/16
+        bottom: 0.625em;//10/16
+      }
+    }
+  }
+    #mainNav {
+      ul {
+        margin: {
+          bottom: 0;
+        }
+        li {
+          display: inline-block;
+          a {
+            text-transform: uppercase;
+            display: block;
+            color: #fff;
+            letter-spacing: 0.0555em;//1/18
+            font: {
+              family: $headingFonts;
+              weight: 700;
+              size: 1.125em;//18/16
+            }
+            padding: {
+              top: 0.2777em; //5/18
+              bottom: 0.2777em; //5/18
+              left: 0.8333em;//15/18
+              right: 0.8333em;//15/18
+            }
+            &:hover + .hoverBar {
+              width: 100%;
+              left: 0%;
+            }
+          }
+          .hoverBar {
+            transition: all 0.5s ease;
+            width: 0%;
+            position: relative;
+            left: 50%;
+            height: 0.1875em;//3/16
+            background-color: #fff;
+          }
+        }
+      }
+    }
+    .hidden {
+      img {
+        opacity: 0;
+      }
+    }
+    .stickyNavRow {
+      position: fixed;
+      width: 100%;
+      background-color: #4a494a;
+    }
+    .staticNav {
+      padding: {
+        top: 2.5em;//40/16
+        bottom: 3.5em;
+      }
+
+    }
+    .stickyNav {
+      padding: {
+        top: 0.625em;//10/16
+      }
+    }
+    #logo {
+      img {
+        width: 15%;
+        padding: {
+          bottom: 1.5em;
+        }
+      }
+      .divider {
+        height: 0.3125em;//5/16
+        background-color: #fff;
+        width: 15%;
+        margin: {
+          left: auto;
+          right: auto;
+          top: 1.25em;//20/16
+          bottom: 1.25em;//20/16
+        }
+      }
+      #logoText {
+        img {
+          width: 40%;
+          padding: {
+            top: 3em;
+            bottom: 2.5em;
+          }
+        }
+        h2 {
+          color: #fff;
+          font: {
+            family: $headingFonts;
+          }
+        }
+      }
+  }
+  h1 {
+    font-family: $bodyFonts;
+    line-height: 1.3em;
+    font-size: 2.75em;
+    font-weight: 300;
+    color: #fff;
+    text-align: center;
+  }
+  //social in header
+  #socialIcons {
+    padding: {
+      top: 1.5em;
+      bottom: 0.5em;
+    }
+    ul {
+      overflow: hidden;
+      list-style-type: none;
+      margin: 0;
+      li {
+        display: inline;
+        width: 33%;
+        float: left;
+      }
+    }
+  }
+  //chevron icon for scrolling
+  #scrollArrow {
+    img {
+      width: 40%;
+      display: block;
+      margin: {
+        left: auto;
+        right: auto;
+      }
+    }
+  }
+}
+
+//main content section
+///////////////////////////////////////////////////////
+//HOME PAGE
+///////////////////////////////////////////////////////
+.mainContent {
+  #secondaryNav {
+    padding: {
+      top: 6.25em;//100/16
+      bottom: 6.25em;//100/16
+    }
+    #navHeading {
+      padding: {
+        bottom: 3.125em;//50/16
+      }
+      h3, h2 {
+        text-align: center;
+        font: {
+          family: $headingFonts;
+          size: 3.125em;//50/16
+          weight: 300;
+        }
+      }
+      h2 {
+        color: $yellow;
+        font: {
+          weight: 700;
+        }
+      }
+    }
+    .navLinks {
+      text-align: center;
+      img {
+        width: 35%;
+        padding: {
+          bottom: 1.3em;
+        }
+      }
+      .navLinkHeading {
+        color: $yellow;
+        font: {
+          weight: 700;
+          family: $headingFonts;
+          size: 2.1875em;//35/16
+        }
+      }
+      .navLinkBody {
+        line-height: 1.35em;//27/20
+        font: {
+          family: $bodyFonts;
+          size: 1.25em;//20/16
+        }
+      }
+    }
+  }
+  .infoBlock {
+    padding: {
+      top: 2.8125em;//45/16
+      bottom: 2.8125em;//45/16
+    }
+    p {
+      border-left: solid 6px $yellow;
+      font: {
+        size: 1.125em;//18/16
+      }
+      padding: {
+        left: 20px;
+      }
+    }
+  }
+  #mission {
+    background-image: url('../img/home/homebg1.jpg');
+    p {
+      color: #fff;
+    }
+  }
+  #story {
+    background-image: url('../img/home/homebg2.jpg');
+    p {
+      color: #fff;
+    }
+  }
+  .infoHeading {
+    text-transform: uppercase;
+    color: $yellow;
+    font: {
+      family: $headingFonts;
+      size: 2.1875em;//35/16
+      weight: 700;
+    }
+  }
+  ///////////////////////////////////////////////////////
+  //CONTACT PAGE
+  ///////////////////////////////////////////////////////
+  .contactHeading {
+    letter-spacing: 1px;
+    margin: {
+      top: 100px;
+      bottom: 25px;
+    }
+    font: {
+      weight: 900;
+    }
+  }
+  .paddingFixLeft {
+    padding: {
+      left: 0.9375em;//15/16
+    }
+  }
+  .paddingFixRight {
+    padding: {
+      right: 0.9375em;//15/16
+    }
+  }
+  #map {
+    iframe {
+      display: block;
+    }
+  }
+  #addressInfo {
+    background-color: #4a494a;
+    color: $yellow;
+    padding: {
+      top: 16px;
+      bottom: 1px;
+      left: 25px;
+    }
+    h1 {
+      text-transform: uppercase;
+      font: {
+        size: 20px;
+        family: $headingFonts;
+        weight: 700;
+      }
+      margin: {
+        bottom: 0;
+      }
+    }
+    p {
+      font: {
+        family: $bodyFonts;
+      }
+    }
+  }
+  #contactForm {
+    form {
+      input, textarea {
+        padding: {
+          top: 30px;
+          bottom: 30px;
+          left: 30px;
+          right: 30px;
+        }
+        ::-webkit-input-placeholder {
+          text-transform: capitalize;
+        }
+      }
+    }
+  }
+}
+footer {
+  background-color: $grey;
+  text-align: center;
+  padding: {
+    top: 2.1875em;//35/16
+    bottom: 2.1875em;//35/16
+  }
+  #copyright {
+    margin: 0;
+    color: #fff;
+    font: {
+      family: $bodyFonts;
+      size: 0.8125em;//13/16
+    }
+  }
+}
+
+::-webkit-input-placeholder {
+  text-transform: capitalize;
+}
