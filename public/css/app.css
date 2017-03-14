@@ -170,13 +170,29 @@ header {
     margin-bottom: 0; }
   .mainContent #addressInfo p {
     font-family: "Open Sans", sans-serif; }
-.mainContent #contactForm form input, .mainContent #contactForm form textarea {
-  padding-top: 30px;
-  padding-bottom: 30px;
-  padding-left: 30px;
-  padding-right: 30px; }
-  .mainContent #contactForm form input ::-webkit-input-placeholder, .mainContent #contactForm form textarea ::-webkit-input-placeholder {
-    text-transform: capitalize; }
+.mainContent #contactForm {
+  margin-top: 1.5625em;
+  margin-bottom: 5em; }
+  .mainContent #contactForm form input, .mainContent #contactForm form textarea {
+    box-shadow: none;
+    border: 1px solid #dddddd;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+    padding-right: 30px; }
+    .mainContent #contactForm form input ::-webkit-input-placeholder, .mainContent #contactForm form textarea ::-webkit-input-placeholder {
+      text-transform: capitalize; }
+  .mainContent #contactForm form #submit {
+    background: none;
+    border: none;
+    letter-spacing: 2px;
+    color: #f6c421;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 15px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 40px;
+    font-weight: 700; }
 
 footer {
   background-color: #5c5b5c;

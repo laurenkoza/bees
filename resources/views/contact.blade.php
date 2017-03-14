@@ -42,9 +42,9 @@ src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJE6Ja8of6LogRU2_GE
              <input type="text" name="subject" value="{{ old('subject') }}" placeholder="subject">
            </div>
            <div class="column small-12">
-             <textarea name="message" value="{{ old('msg') }}" rows="8" cols="80" placeholder="message"></textarea>
+             <textarea name="message" value="{{ old('msg') }}" rows=12 cols="80" placeholder="message"></textarea>
            </div>
-           <div class="column small-2 small-centered">
+           <div class="column small-3 small-centered">
              <input id="submit" type="submit">
            </div>
          </div>

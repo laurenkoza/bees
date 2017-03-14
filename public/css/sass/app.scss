@@ -312,8 +312,14 @@ header {
     }
   }
   #contactForm {
+    margin: {
+      top: 1.5625em;//25/16
+      bottom: 5em;//80/16
+    }
     form {
       input, textarea {
+        box-shadow: none;
+        border: 1px solid #dddddd;
         padding: {
           top: 30px;
           bottom: 30px;
@@ -322,6 +328,20 @@ header {
         }
         ::-webkit-input-placeholder {
           text-transform: capitalize;
+        }
+      }
+      #submit {
+        background: none;
+        border: none;
+        letter-spacing: 2px;
+        color: $yellow;
+        text-align: center;
+        text-transform: uppercase;
+        padding: 15px;
+        font: {
+          family: $headingFonts;
+          size: 40px;
+          weight: 700;
         }
       }
     }
