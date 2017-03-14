@@ -12,11 +12,19 @@
 
 <body>
   <header class="expanded row">
-    <div id="navRow" class="row">
-      <div id="stickyLogo" class="column small-2 hidden">
+    <div id="navRow" class="row navRow">
+      <div id="stickyLogo" class="column large-2 small-6 hidden">
         <a href="index"><img src="img/icons/logo_horizontal.svg" alt="Heff's Hives logo"></a>
       </div>
-      <nav id="mainNav" class="column small-6 small-offset-4 staticNav">
+      <div id="hamburgerIcon" class="column small-2 small-offset-4 hidden">
+        <button type="button">
+          <div class="hamburgerBar"></div>
+          <div class="hamburgerBar"></div>
+          <div class="hamburgerBar"></div>
+        </button>
+      </div>
+
+      <nav id="mainNav" class="column small-12 large-6 large-offset-4 staticNav">
         <ul>
           <li><a href="learn">Learn</a>
             <div class="hoverBar"></div>

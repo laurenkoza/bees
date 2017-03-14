@@ -1,10 +1,10 @@
+@import url(desktop.css);
 body {
   color: #5c5b5c;
   margin-left: auto;
   margin-right: auto; }
 
 header {
-  /* The image used */
   background-image: url("../img/home/splash.jpg");
   /* Set a specific height */
   height: 100vh;
@@ -14,14 +14,36 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center; }
+  header .navRow {
+    background-color: #4a494a;
+    margin-bottom: 3.5em; }
+  header .hamburgerBar {
+    height: 3px;
+    background-color: #f6c421;
+    width: 100%;
+    margin-top: 8px;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease; }
+  header .barOpen:first-child {
+    transform: rotate(45deg);
+    margin-top: 16px; }
+  header .barOpen:nth-child(2) {
+    transform: rotate(-45deg);
+    margin-top: -3px; }
+  header .barOpen:last-child {
+    opacity: 0; }
+  header #hamburgerIcon button {
+    display: block;
+    width: 100%; }
   header #stickyLogo img {
     width: 75%;
     padding-top: 0.625em;
     padding-bottom: 0.625em; }
-  header #mainNav ul {
-    margin-bottom: 0; }
+  header #mainNav {
+    height: 0vh;
+    overflow: hidden; }
     header #mainNav ul li {
-      display: inline-block; }
+      list-style-type: none; }
       header #mainNav ul li a {
         text-transform: uppercase;
         display: block;
@@ -38,23 +60,13 @@ header {
           width: 100%;
           left: 0%; }
       header #mainNav ul li .hoverBar {
+        -webkit-transition: all 0.5s ease;
         transition: all 0.5s ease;
         width: 0%;
         position: relative;
         left: 50%;
         height: 0.1875em;
         background-color: #fff; }
-  header .hidden img {
-    opacity: 0; }
-  header .stickyNavRow {
-    position: fixed;
-    width: 100%;
-    background-color: #4a494a; }
-  header .staticNav {
-    padding-top: 2.5em;
-    padding-bottom: 3.5em; }
-  header .stickyNav {
-    padding-top: 0.625em; }
   header #logo img {
     width: 15%;
     padding-bottom: 1.5em; }
@@ -132,11 +144,15 @@ header {
     font-size: 1.125em;
     padding-left: 20px; }
 .mainContent #mission {
-  background-image: url("../img/home/homebg1.jpg"); }
+  background-image: url("../img/home/homebg1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat; }
   .mainContent #mission p {
     color: #fff; }
 .mainContent #story {
-  background-image: url("../img/home/homebg2.jpg"); }
+  background-image: url("../img/home/homebg2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat; }
   .mainContent #story p {
     color: #fff; }
 .mainContent .infoHeading {
@@ -150,10 +166,6 @@ header {
   margin-top: 100px;
   margin-bottom: 25px;
   font-weight: 900; }
-.mainContent .paddingFixLeft {
-  padding-left: 0.9375em; }
-.mainContent .paddingFixRight {
-  padding-right: 0.9375em; }
 .mainContent #map iframe {
   display: block; }
 .mainContent #addressInfo {
@@ -190,9 +202,12 @@ header {
     text-align: center;
     text-transform: uppercase;
     padding: 15px;
+    display: block;
     font-family: "Montserrat", sans-serif;
     font-size: 40px;
-    font-weight: 700; }
+    font-weight: 700;
+    margin-left: auto;
+    margin-right: auto; }
 
 footer {
   background-color: #5c5b5c;

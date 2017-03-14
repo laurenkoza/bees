@@ -1,0 +1,96 @@
+//font families
+$headingFonts: 'Montserrat', sans-serif;
+$bodyFonts: 'Open Sans', sans-serif;
+
+//colors
+$yellow: #f6c421;
+$grey: #5c5b5c;
+
+@media screen and (min-width: 1200px) {
+
+  body {
+    ///////////////////////////////
+    //move these to the correct section later when styling th contact page
+    #contactForm {
+      form {
+        .paddingFixLeft {
+          padding: {
+            left: 0.9375em;//15/16
+          }
+        }
+        .paddingFixRight {
+          padding: {
+            right: 0.9375em;//15/16
+          }
+        }
+      }
+    }
+    header {
+      .navRow {
+        background-color: transparent;
+        margin: {
+          bottom: 0;
+        }
+      }
+      #mainNav {
+        ul {
+          margin: {
+            bottom: 0;
+          }
+          li {
+            display: inline-block;
+            a {
+              text-transform: uppercase;
+              display: block;
+              color: #fff;
+              letter-spacing: 0.0555em;//1/18
+              font: {
+                family: $headingFonts;
+                weight: 700;
+                size: 1.125em;//18/16
+              }
+              padding: {
+                top: 0.2777em; //5/18
+                bottom: 0.2777em; //5/18
+                left: 0.8333em;//15/18
+                right: 0.8333em;//15/18
+              }
+              &:hover + .hoverBar {
+                width: 100%;
+                left: 0%;
+              }
+            }
+            .hoverBar {
+              transition: all 0.5s ease;
+              width: 0%;
+              position: relative;
+              left: 50%;
+              height: 0.1875em;//3/16
+              background-color: #fff;
+            }
+          }
+        }
+      }
+      .hidden {
+          display: none;
+      }
+      .stickyNavRow {
+        position: fixed;
+        width: 100%;
+        background-color: #4a494a;
+      }
+      .staticNav {
+        padding: {
+          top: 2.5em;//40/16
+          bottom: 3.5em;
+        }
+
+      }
+      .stickyNav {
+        padding: {
+          top: 0.625em;//10/16
+        }
+      }
+    }
+  }
+}

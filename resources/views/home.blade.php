@@ -19,7 +19,7 @@
     </div>
     <div class="column small-4 navLinks">
       <img src="img/home/shopicon.svg" alt="Honey Jar Icon">
-      <a href="contact"><h2 class="navLinkHeading">SHOP</h2></a>
+      <a href="shop"><h2 class="navLinkHeading">SHOP</h2></a>
       <p class="navLinkBody">Sustainable, "bee first"<br>All natural products</p>
     </div>
   </section>
@@ -35,7 +35,8 @@
   <section id="beeGuardian" class="row infoBlock">
     <div class="column small-8 small-centered">
       <h2 class="infoHeading">THE BEES</h2>
-      <p>Bee guardianship text goes here. Honeybees have been present on the Earth for millions of years. One of the oldest agricultural pursuits known to man is beekeeping. Early settlers to North America had a limited and expensive source of sugar, so honeybees were exported from Europe to establish apiaries here. <span class="break">The honey and beeswax gathered were used for many purposes. Today, many advances have been made in this aspect of agriculture. Some people derive their income from their apiaries while many others keep honeybees as a hobby. Only female honey bees can sting, the males (drones) are not able to, whereas, Queen honey bees can sting, but they remain close to the hive, and so a sting form a honey bee queen would be very rare.  If the queen honey bee is removed from the hive, within 15 minutes, the rest of the colony knows about it!  A typical honey bee colony may have around 50,000 workers.</span></p>
+      <!-- <p>Bee guardianship text goes here. Honeybees have been present on the Earth for millions of years. One of the oldest agricultural pursuits known to man is beekeeping. Early settlers to North America had a limited and expensive source of sugar, so honeybees were exported from Europe to establish apiaries here. <span class="break">The honey and beeswax gathered were used for many purposes. Today, many advances have been made in this aspect of agriculture. Some people derive their income from their apiaries while many others keep honeybees as a hobby. Only female honey bees can sting, the males (drones) are not able to, whereas, Queen honey bees can sting, but they remain close to the hive, and so a sting form a honey bee queen would be very rare.  If the queen honey bee is removed from the hive, within 15 minutes, the rest of the colony knows about it!  A typical honey bee colony may have around 50,000 workers.</span></p> -->
+      <p>We all know what an insect is, but each one is slightly different from another and it is these differences that make the honey bee and every other species unique. Heff’s has created an infographic about bees and the importance of bee guardianship.</p>
     </div>
   </section>
   <section id="story" class=" expanded row infoBlock">

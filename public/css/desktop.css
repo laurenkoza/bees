@@ -1,0 +1,47 @@
+@media screen and (min-width: 1200px) {
+  body #contactForm form .paddingFixLeft {
+    padding-left: 0.9375em; }
+  body #contactForm form .paddingFixRight {
+    padding-right: 0.9375em; }
+  body header .navRow {
+    background-color: transparent;
+    margin-bottom: 0; }
+  body header #mainNav ul {
+    margin-bottom: 0; }
+    body header #mainNav ul li {
+      display: inline-block; }
+      body header #mainNav ul li a {
+        text-transform: uppercase;
+        display: block;
+        color: #fff;
+        letter-spacing: 0.0555em;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 700;
+        font-size: 1.125em;
+        padding-top: 0.2777em;
+        padding-bottom: 0.2777em;
+        padding-left: 0.8333em;
+        padding-right: 0.8333em; }
+        body header #mainNav ul li a:hover + .hoverBar {
+          width: 100%;
+          left: 0%; }
+      body header #mainNav ul li .hoverBar {
+        transition: all 0.5s ease;
+        width: 0%;
+        position: relative;
+        left: 50%;
+        height: 0.1875em;
+        background-color: #fff; }
+  body header .hidden {
+    display: none; }
+  body header .stickyNavRow {
+    position: fixed;
+    width: 100%;
+    background-color: #4a494a; }
+  body header .staticNav {
+    padding-top: 2.5em;
+    padding-bottom: 3.5em; }
+  body header .stickyNav {
+    padding-top: 0.625em; } }
+
+/*# sourceMappingURL=desktop.css.map */
