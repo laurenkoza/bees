@@ -7,7 +7,7 @@ class ContactController extends Controller{
 
 	public function getIndex(){
 		//return "Working Home page!";
-		return view('contact', ['title' => "Contact", 'header' => "Have questions?<br>we have answers."]);
+		return view('contact', ['title' => "Contact", 'header' => "Have questions?<br>we have answers.", 'headerImg' => 'contactHeader']);
 	}
 
 //Currently, function below is active in the Routes file

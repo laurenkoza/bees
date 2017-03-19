@@ -11,7 +11,7 @@
   </head>
 
 <body>
-  <header class="expanded row">
+  <header id="{{$headerImg}}" class="expanded row bgParallax">
     <div id="navRow" class="row navRow">
       <div id="stickyLogo" class="column large-2 small-6 hidden">
         <a href="index"><img src="img/icons/logo_horizontal.svg" alt="Heff's Hives logo"></a>

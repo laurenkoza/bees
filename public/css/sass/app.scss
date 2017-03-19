@@ -17,14 +17,47 @@ body {
     right: auto;
   }
 }
-header {
+h1,h2,h3,h4,h5,h6 {
+  font: {
+    family: $headingFonts;
+  }
+}
+p,a,li {
+    font: {
+      family: $bodyFonts;
+    }
+}
+.hidden {
+  display: none;
+}
+//different header background images for each page
+#homeHeader {
   background-image: url('../img/home/splash.jpg');
+}
+#learnHeader {
+  background-image: url('../img/learn/learnsplash.jpg');
+}
+#servicesHeader {
+  background-image: url('../img/contact/contactsplash.jpg');
+}
+#shopHeader {
+  background-image: url('../img/shop/shopsplash.jpg');
+}
+#contactHeader {
+  background-image: url('../img/contact/contactsplash.jpg');
+}
+.mainContent {
+  padding: {
+    top: 6.25em;//100/16
+  }
+}
+header {
   /* Set a specific height */
   height: 100vh;
   /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
+  // background-attachment: fixed;
+  // background-position: center;
+  background-repeat: repeat-y;
   background-size: cover;
   text-align: center;
   //background color and margin needed at mobile but not desktop
@@ -36,10 +69,10 @@ header {
   }
   //horizontal bars for the hamburger nav toggle button
   .hamburgerBar {
-    height: 3px;
+    height: 0.1875em;//3/16/
     background-color: $yellow;
     width: 100%;
-    margin-top: 8px;
+    margin-top: 0.5em;//8/16/
     // position: relative;
     -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
@@ -190,9 +223,15 @@ header {
 //HOME PAGE
 ///////////////////////////////////////////////////////
 .mainContent {
-  #secondaryNav {
+  .sideBorder {
+    border-left: solid 6px $yellow;
     padding: {
-      top: 6.25em;//100/16
+      left: 20px;
+    }
+  }
+  #secondaryNav, #services {
+    padding: {
+      // top: 6.25em;//100/16
       bottom: 6.25em;//100/16
     }
     #navHeading {
@@ -202,7 +241,6 @@ header {
       h3, h2 {
         text-align: center;
         font: {
-          family: $headingFonts;
           size: 3.125em;//50/16
           weight: 300;
         }
@@ -214,7 +252,7 @@ header {
         }
       }
     }
-    .navLinks {
+    .iconBlock {
       text-align: center;
       img {
         width: 35%;
@@ -222,7 +260,7 @@ header {
           bottom: 1.3em;
         }
       }
-      .navLinkHeading {
+      .iconBlockHeading {
         color: $yellow;
         font: {
           weight: 700;
@@ -244,31 +282,34 @@ header {
       top: 2.8125em;//45/16
       bottom: 2.8125em;//45/16
     }
-    p {
-      border-left: solid 6px $yellow;
+    p, h3 {
+      color: #fff;
       font: {
-        size: 1.125em;//18/16
-      }
-      padding: {
-        left: 20px;
+        // size: 1.125em;//18/16
+        size: 1em;
       }
     }
   }
-  #mission {
-    background-image: url('../img/home/homebg1.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    p {
-      color: #fff;
+  h3 {
+    text-transform: uppercase;
+    font: {
+      weight: 700;
     }
   }
   #story {
     background-image: url('../img/home/homebg2.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+  }
+  #mission {
     p {
-      color: #fff;
+      color: $grey;
     }
+  }
+  #beeGuardian {
+    background-image: url('../img/home/homebg1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
   }
   .infoHeading {
     text-transform: uppercase;
@@ -285,7 +326,6 @@ header {
   .contactHeading {
     letter-spacing: 1px;
     margin: {
-      top: 100px;
       bottom: 25px;
     }
     font: {
@@ -382,4 +422,170 @@ footer {
 
 ::-webkit-input-placeholder {
   text-transform: capitalize;
+}
+
+///////////////////////////////////////////////////////
+//SERVICES PAGE
+///////////////////////////////////////////////////////
+.mainContent {
+  #ourServices {
+    padding: {
+      top: 0;
+    }
+    p {
+      color: $grey;
+      // size: 0.888em;//16/18
+    }
+  }
+  #services {
+    p {
+      text-align: left;
+      font: {
+        size: 1em;
+      }
+    }
+    .service {
+      h2 {
+        text-transform: uppercase;
+      }
+      .price {
+        text-transform: uppercase;
+        text-align: center;
+        padding: {
+          bottom: 10px;
+        }
+        font: {
+          size: 1em;
+          weight: 700;
+        }
+      }
+      .included {
+        // text-align: justify;
+        padding: {
+          left: 15px;
+        }
+        border-left: solid 5px $yellow;
+      }
+      .takeaway {
+        font: {
+          style: italic
+        }
+        line-height: 2.5em;
+      }
+      .add {
+        font: {
+          weight: 700;
+        }
+      }
+    }
+  }
+  #boutique {
+    background-image: url('../img/home/homebg2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    li {
+      color: #fff;
+    }
+  }
+}
+
+///////////////////////////////////////////////////////
+//SHOP PAGE
+///////////////////////////////////////////////////////
+.mainContent {
+  .shopItem {
+    margin: {
+      top: 40px;
+      bottom: 40px;
+    }
+    &:last-child {
+      margin: {
+        bottom: 80px;
+      }
+    }
+  }
+  .shopItemName {
+    color: $yellow;
+  }
+  .shopItem {
+    .itemDesc {
+      border-left: solid 5px $yellow;
+      padding: {
+        left: 15px;
+      }
+    }
+  }
+  .shopPrice {
+    color: #fff;
+    background-color: #333;
+    display: inline;
+    font: {
+      weight: 700;
+    }
+    padding: 5px 5px;
+  }
+}
+///////////////////////////////////////////////////////
+//LEARN PAGE
+///////////////////////////////////////////////////////
+.mainContent {
+  //filler dot images just so we have something there when we display this at RID
+  .dots {
+    overflow: hidden;
+    width: 280px;
+    margin: 20px auto;
+    .dot {
+      width: 50px;
+      height: 50px;
+      display: block;
+      float: left;
+      border: solid 2px $yellow;
+      border-radius: 100%;
+      margin: {
+        left: 10px;
+        right: 10px;
+      }
+      &:first-child {
+        background-color: $yellow;
+      }
+    }
+  }
+  #callToAction {
+    background-color: #417505;
+    padding: {
+      top: 15px;
+      // bottom: 15px;
+    }
+    margin: {
+      top: 50px;
+      bottom: 50px;
+    }
+    p {
+      text-align: center;
+      color: #fff;
+      font: {
+        size: 1.2em;
+      }
+    }
+    .bold {
+      text-transform: uppercase;
+      font: {
+        weight: 700;
+      }
+    }
+  }
+  .sideBorder {
+    margin: {
+      left: 0;
+    }
+    padding: {
+      left: 30px;
+    }
+  }
+  #blog {
+    margin: {
+      top: 30px;
+      bottom: 100px;
+    }
+  }
 }

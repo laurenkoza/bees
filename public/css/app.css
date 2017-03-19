@@ -4,24 +4,48 @@ body {
   margin-left: auto;
   margin-right: auto; }
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Montserrat", sans-serif; }
+
+p, a, li {
+  font-family: "Open Sans", sans-serif; }
+
+.hidden {
+  display: none; }
+
+#homeHeader {
+  background-image: url("../img/home/splash.jpg"); }
+
+#learnHeader {
+  background-image: url("../img/learn/learnsplash.jpg"); }
+
+#servicesHeader {
+  background-image: url("../img/contact/contactsplash.jpg"); }
+
+#shopHeader {
+  background-image: url("../img/shop/shopsplash.jpg"); }
+
+#contactHeader {
+  background-image: url("../img/contact/contactsplash.jpg"); }
+
+.mainContent {
+  padding-top: 6.25em; }
+
 header {
-  background-image: url("../img/home/splash.jpg");
   /* Set a specific height */
   height: 100vh;
   /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
+  background-repeat: repeat-y;
   background-size: cover;
   text-align: center; }
   header .navRow {
     background-color: #4a494a;
     margin-bottom: 3.5em; }
   header .hamburgerBar {
-    height: 3px;
+    height: 0.1875em;
     background-color: #f6c421;
     width: 100%;
-    margin-top: 8px;
+    margin-top: 0.5em;
     -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease; }
   header .barOpen:first-child {
@@ -109,52 +133,53 @@ header {
     margin-left: auto;
     margin-right: auto; }
 
-.mainContent #secondaryNav {
-  padding-top: 6.25em;
+.mainContent .sideBorder {
+  border-left: solid 6px #f6c421;
+  padding-left: 20px; }
+.mainContent #secondaryNav, .mainContent #services {
   padding-bottom: 6.25em; }
-  .mainContent #secondaryNav #navHeading {
+  .mainContent #secondaryNav #navHeading, .mainContent #services #navHeading {
     padding-bottom: 3.125em; }
-    .mainContent #secondaryNav #navHeading h3, .mainContent #secondaryNav #navHeading h2 {
+    .mainContent #secondaryNav #navHeading h3, .mainContent #secondaryNav #navHeading h2, .mainContent #services #navHeading h3, .mainContent #services #navHeading h2 {
       text-align: center;
-      font-family: "Montserrat", sans-serif;
       font-size: 3.125em;
       font-weight: 300; }
-    .mainContent #secondaryNav #navHeading h2 {
+    .mainContent #secondaryNav #navHeading h2, .mainContent #services #navHeading h2 {
       color: #f6c421;
       font-weight: 700; }
-  .mainContent #secondaryNav .navLinks {
+  .mainContent #secondaryNav .iconBlock, .mainContent #services .iconBlock {
     text-align: center; }
-    .mainContent #secondaryNav .navLinks img {
+    .mainContent #secondaryNav .iconBlock img, .mainContent #services .iconBlock img {
       width: 35%;
       padding-bottom: 1.3em; }
-    .mainContent #secondaryNav .navLinks .navLinkHeading {
+    .mainContent #secondaryNav .iconBlock .iconBlockHeading, .mainContent #services .iconBlock .iconBlockHeading {
       color: #f6c421;
       font-weight: 700;
       font-family: "Montserrat", sans-serif;
       font-size: 2.1875em; }
-    .mainContent #secondaryNav .navLinks .navLinkBody {
+    .mainContent #secondaryNav .iconBlock .navLinkBody, .mainContent #services .iconBlock .navLinkBody {
       line-height: 1.35em;
       font-family: "Open Sans", sans-serif;
       font-size: 1.25em; }
 .mainContent .infoBlock {
   padding-top: 2.8125em;
   padding-bottom: 2.8125em; }
-  .mainContent .infoBlock p {
-    border-left: solid 6px #f6c421;
-    font-size: 1.125em;
-    padding-left: 20px; }
-.mainContent #mission {
-  background-image: url("../img/home/homebg1.jpg");
-  background-size: cover;
-  background-repeat: no-repeat; }
-  .mainContent #mission p {
-    color: #fff; }
+  .mainContent .infoBlock p, .mainContent .infoBlock h3 {
+    color: #fff;
+    font-size: 1em; }
+.mainContent h3 {
+  text-transform: uppercase;
+  font-weight: 700; }
 .mainContent #story {
   background-image: url("../img/home/homebg2.jpg");
   background-size: cover;
   background-repeat: no-repeat; }
-  .mainContent #story p {
-    color: #fff; }
+.mainContent #mission p {
+  color: #5c5b5c; }
+.mainContent #beeGuardian {
+  background-image: url("../img/home/homebg1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat; }
 .mainContent .infoHeading {
   text-transform: uppercase;
   color: #f6c421;
@@ -163,7 +188,6 @@ header {
   font-weight: 700; }
 .mainContent .contactHeading {
   letter-spacing: 1px;
-  margin-top: 100px;
   margin-bottom: 25px;
   font-weight: 900; }
 .mainContent #map iframe {
@@ -222,5 +246,86 @@ footer {
 
 ::-webkit-input-placeholder {
   text-transform: capitalize; }
+
+.mainContent #ourServices {
+  padding-top: 0; }
+  .mainContent #ourServices p {
+    color: #5c5b5c; }
+.mainContent #services p {
+  text-align: left;
+  font-size: 1em; }
+.mainContent #services .service h2 {
+  text-transform: uppercase; }
+.mainContent #services .service .price {
+  text-transform: uppercase;
+  text-align: center;
+  padding-bottom: 10px;
+  font-size: 1em;
+  font-weight: 700; }
+.mainContent #services .service .included {
+  padding-left: 15px;
+  border-left: solid 5px #f6c421; }
+.mainContent #services .service .takeaway {
+  font-style: italic;
+  line-height: 2.5em; }
+.mainContent #services .service .add {
+  font-weight: 700; }
+.mainContent #boutique {
+  background-image: url("../img/home/homebg2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat; }
+  .mainContent #boutique li {
+    color: #fff; }
+
+.mainContent .shopItem {
+  margin-top: 40px;
+  margin-bottom: 40px; }
+  .mainContent .shopItem:last-child {
+    margin-bottom: 80px; }
+.mainContent .shopItemName {
+  color: #f6c421; }
+.mainContent .shopItem .itemDesc {
+  border-left: solid 5px #f6c421;
+  padding-left: 15px; }
+.mainContent .shopPrice {
+  color: #fff;
+  background-color: #333;
+  display: inline;
+  font-weight: 700;
+  padding: 5px 5px; }
+
+.mainContent .dots {
+  overflow: hidden;
+  width: 280px;
+  margin: 20px auto; }
+  .mainContent .dots .dot {
+    width: 50px;
+    height: 50px;
+    display: block;
+    float: left;
+    border: solid 2px #f6c421;
+    border-radius: 100%;
+    margin-left: 10px;
+    margin-right: 10px; }
+    .mainContent .dots .dot:first-child {
+      background-color: #f6c421; }
+.mainContent #callToAction {
+  background-color: #417505;
+  padding-top: 15px;
+  margin-top: 50px;
+  margin-bottom: 50px; }
+  .mainContent #callToAction p {
+    text-align: center;
+    color: #fff;
+    font-size: 1.2em; }
+  .mainContent #callToAction .bold {
+    text-transform: uppercase;
+    font-weight: 700; }
+.mainContent .sideBorder {
+  margin-left: 0;
+  padding-left: 30px; }
+.mainContent #blog {
+  margin-top: 30px;
+  margin-bottom: 100px; }
 
 /*# sourceMappingURL=app.css.map */
