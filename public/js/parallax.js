@@ -1,26 +1,21 @@
-(function() {
-    "use strict";
-//---------VAR-----------//
+    function parallax(event) {
+      var topdistance = this.pageYOffset;
+      var layers = document.querySelectorAll(".layer");
+      var color = document.querySelector("#color");
 
-   var parallaxBG = document.querySelectorAll(".bgParallax");
-   var winYOffset;
-   var speedBG = 0.8;
+      for(var i=0;i<layers.length;i++) {
+        layer = layers[i];
+        depth = layer.getAttribute('data-depth');
+        movement = -(topdistance * depth);
+        translate3d = 'translate3d(0,'+movement+'px,0)';
+        layer.style['webkit-transform'] = translate3d;
+        layer.style['moz-transform'] = translate3d;
+        layer.style['ms-transform'] = translate3d;
+        layer.style['o-transform'] = translate3d;
+        layer.style.transform = translate3d;
+      }
+      colDepth = color.getAttribute('data-depth');
+      color.style.opacity = (topdistance * colDepth);
+    }
 
-//---------FUN-----------//
-
-   function parallaxScroll() {
-       [].slice.call(parallaxBG).forEach(
-           function(el){
-               for(var i=0; i<parallaxBG.length; i++){
-                   winYOffset = window.pageYOffset;
-                   var elBackgroundPOS = "50%" + (winYOffset * speedBG) + "px";
-                   el.style.backgroundPosition = elBackgroundPOS;
-               }
-           }
-       )
-   }
-
-//---------EVT-----------//
-   window.addEventListener("scroll", parallaxScroll, false);
-
-})();
+    window.addEventListener("scroll", parallax, false);

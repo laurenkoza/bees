@@ -8,10 +8,8 @@
        <h2 class="infoHeading contactHeading"><?php echo $title;?></h2>
      </div>
      <div id="map" class="column small-12 large-8 large-centered">
-       <!-- AIzaSyBD7ug0phs_PZpJvdVtz4LwLcuAZcAOftU
+       <!-- AIzaSyAWjgJWX1Fd21hpo0B0ojyipdP4-gm59tM
      google maps API key -->
-     <iframe width="100%" height="450" frameborder="0" style="border:0"
-src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJE6Ja8of6LogRU2_GEDJ1hFk&key=AIzaSyBD7ug0phs_PZpJvdVtz4LwLcuAZcAOftU" allowfullscreen></iframe>
      </div>
      <div id="addressInfo" class="column small-12 large-8 large-centered">
        <h1>Heff's Hives</h1>
@@ -33,16 +31,20 @@ src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJE6Ja8of6LogRU2_GE
          {{ csrf_field() }}
          <div class="row large-collapse">
            <div class="columns small-12 large-6 paddingFixRight">
-             <input type="text" name="name" value="{{ old('name') }}" placeholder="name">
+             <label for="name">Name</label>
+             <input type="text" name="name" value="{{ old('name') }}" placeholder="type message here">
            </div>
            <div class="columns small-12 large-6 paddingFixLeft">
-             <input type="email" name="email" value="{{ old('email') }}" placeholder="email">
+             <label for="email">Email</label>
+             <input type="email" name="email" value="{{ old('email') }}" placeholder="type message here">
            </div>
            <div class="column small-12">
-             <input type="text" name="subject" value="{{ old('subject') }}" placeholder="subject">
+             <label for="subject">Subject</label>
+             <input type="text" name="subject" value="{{ old('subject') }}" placeholder="type message here">
            </div>
            <div class="column small-12">
-             <textarea name="message" value="{{ old('msg') }}" rows=12 cols="80" placeholder="message"></textarea>
+             <label for="message">Message</label>
+             <textarea name="message" value="{{ old('msg') }}" rows=12 cols="80" placeholder="type message here"></textarea>
            </div>
            <div class="column small-12 small-centered">
              <input id="submit" type="submit">

@@ -8,10 +8,8 @@ $bodyFonts: 'Open Sans', sans-serif;
 $yellow: #f6c421;
 $grey: #5c5b5c;
 
-//parallaxing header
 body {
   color: $grey;
-  // width: 1440px; //delete later
   margin: {
     left: auto;
     right: auto;
@@ -28,23 +26,31 @@ p,a,li {
     }
 }
 .hidden {
+  // display: none;
+}
+.hide {
   display: none;
 }
 //different header background images for each page
 #homeHeader {
   background-image: url('../img/home/splash.jpg');
+  background-size: cover;
 }
 #learnHeader {
   background-image: url('../img/learn/learnsplash.jpg');
+  background-size: cover;
 }
 #servicesHeader {
   background-image: url('../img/contact/contactsplash.jpg');
+  background-size: cover;
 }
 #shopHeader {
   background-image: url('../img/shop/shopsplash.jpg');
+  background-size: cover;
 }
 #contactHeader {
   background-image: url('../img/contact/contactsplash.jpg');
+  background-size: cover;
 }
 .mainContent {
   padding: {
@@ -60,6 +66,7 @@ header {
   background-repeat: repeat-y;
   background-size: cover;
   text-align: center;
+  background-color: $yellow;
   //background color and margin needed at mobile but not desktop
   .navRow {
     background-color: #4a494a;
@@ -137,7 +144,7 @@ header {
           .hoverBar {
             -webkit-transition: all 0.5s ease;
             transition: all 0.5s ease;
-            width: 0%;
+            width: 0;
             position: relative;
             left: 50%;
             height: 0.1875em;//3/16
@@ -148,15 +155,15 @@ header {
     }
     #logo {
       img {
-        width: 15%;
+        width: 30%;
         padding: {
-          bottom: 1.5em;
+          bottom: 0.5em;
         }
       }
       .divider {
         height: 0.3125em;//5/16
         background-color: #fff;
-        width: 15%;
+        width: 30%;
         margin: {
           left: auto;
           right: auto;
@@ -166,16 +173,17 @@ header {
       }
       #logoText {
         img {
-          width: 40%;
+          width: 90%;
           padding: {
-            top: 3em;
-            bottom: 2.5em;
+            top: 1.5em;
+            bottom: 0.5em;
           }
         }
         h2 {
           color: #fff;
           font: {
             family: $headingFonts;
+            size: 1.5em;
           }
         }
       }
@@ -223,15 +231,17 @@ header {
 //HOME PAGE
 ///////////////////////////////////////////////////////
 .mainContent {
+  background-color: #fff;
   .sideBorder {
-    border-left: solid 6px $yellow;
+    border-left: none;
+    border-top: 3px solid $yellow;
     padding: {
-      left: 20px;
+      left: 0;
+      top: 13px;
     }
   }
   #secondaryNav, #services {
     padding: {
-      // top: 6.25em;//100/16
       bottom: 6.25em;//100/16
     }
     #navHeading {
@@ -241,7 +251,7 @@ header {
       h3, h2 {
         text-align: center;
         font: {
-          size: 3.125em;//50/16
+          size: 1.5em;
           weight: 300;
         }
       }
@@ -253,6 +263,9 @@ header {
       }
     }
     .iconBlock {
+      margin: {
+        bottom: 60px;
+      }
       text-align: center;
       img {
         width: 35%;
@@ -265,7 +278,7 @@ header {
         font: {
           weight: 700;
           family: $headingFonts;
-          size: 2.1875em;//35/16
+          size: 1.5em;//35/16
         }
       }
       .navLinkBody {
@@ -316,7 +329,7 @@ header {
     color: $yellow;
     font: {
       family: $headingFonts;
-      size: 2.1875em;//35/16
+      size: 1.5em;
       weight: 700;
     }
   }
@@ -333,9 +346,8 @@ header {
     }
   }
   #map {
-    iframe {
-      display: block;
-    }
+    height: 400px;
+    z-index: 1;
   }
   #addressInfo {
     background-color: #4a494a;
@@ -368,14 +380,22 @@ header {
       bottom: 5em;//80/16
     }
     form {
+      label {
+        text-transform: uppercase;
+        color: $yellow;
+        font: {
+          family: $headingFonts;
+          weight: 700;
+        }
+      }
       input, textarea {
         box-shadow: none;
         border: 1px solid #dddddd;
         padding: {
-          top: 30px;
-          bottom: 30px;
-          left: 30px;
-          right: 30px;
+          top: 20px;
+          bottom: 20px;
+          left: 20px;
+          right: 20px;
         }
         ::-webkit-input-placeholder {
           text-transform: capitalize;
@@ -407,15 +427,15 @@ footer {
   background-color: $grey;
   text-align: center;
   padding: {
-    top: 2.1875em;//35/16
-    bottom: 2.1875em;//35/16
+    top: 1.5em;//35/16
+    bottom: 1.5em;//35/16
   }
   #copyright {
     margin: 0;
     color: #fff;
     font: {
       family: $bodyFonts;
-      size: 0.8125em;//13/16
+      size: 0.7em;//13/16
     }
   }
 }
@@ -438,6 +458,9 @@ footer {
     }
   }
   #services {
+    padding: {
+      top: 3.25em;
+    }
     p {
       text-align: left;
       font: {
@@ -461,10 +484,6 @@ footer {
       }
       .included {
         // text-align: justify;
-        padding: {
-          left: 15px;
-        }
-        border-left: solid 5px $yellow;
       }
       .takeaway {
         font: {
@@ -495,8 +514,8 @@ footer {
 .mainContent {
   .shopItem {
     margin: {
-      top: 40px;
-      bottom: 40px;
+      top: 50px;
+      bottom: 50px;
     }
     &:last-child {
       margin: {
@@ -507,18 +526,10 @@ footer {
   .shopItemName {
     color: $yellow;
   }
-  .shopItem {
-    .itemDesc {
-      border-left: solid 5px $yellow;
-      padding: {
-        left: 15px;
-      }
-    }
-  }
   .shopPrice {
     color: #fff;
     background-color: #333;
-    display: inline;
+    width: inherit;
     font: {
       weight: 700;
     }
@@ -532,18 +543,17 @@ footer {
   //filler dot images just so we have something there when we display this at RID
   .dots {
     overflow: hidden;
-    width: 280px;
     margin: 20px auto;
     .dot {
-      width: 50px;
-      height: 50px;
+      width: 15%;
+      height: 40px;
       display: block;
       float: left;
       border: solid 2px $yellow;
       border-radius: 100%;
       margin: {
-        left: 10px;
-        right: 10px;
+        left: 5%;
+        right: 5%;
       }
       &:first-child {
         background-color: $yellow;
@@ -551,10 +561,13 @@ footer {
     }
   }
   #callToAction {
-    background-color: #417505;
+    background-image: url('../img/home/homebg1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom center;
     padding: {
-      top: 15px;
-      // bottom: 15px;
+      top: 30px;
+      bottom: 15px;
     }
     margin: {
       top: 50px;
@@ -562,25 +575,21 @@ footer {
     }
     p {
       text-align: center;
-      color: #fff;
-      font: {
-        size: 1.2em;
-      }
+      text-transform: none;
     }
-    .bold {
+    a {
+      font: {
+        family: $headingFonts;
+      }
+      color: $yellow;
       text-transform: uppercase;
       font: {
         weight: 700;
       }
     }
   }
-  .sideBorder {
-    margin: {
-      left: 0;
-    }
-    padding: {
-      left: 30px;
-    }
+  .hideText {
+    display: none;
   }
   #blog {
     margin: {

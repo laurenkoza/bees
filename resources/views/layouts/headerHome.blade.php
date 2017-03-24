@@ -11,7 +11,12 @@
   </head>
 
 <body>
-  <header id="{{$headerImg}}" class="expanded row bgParallax">
+  <header class="expanded row">
+    <div id="{{$headerImg}}" class="layer" data-depth="0.10"><!-- parallax layer with background image --></div>
+    <div class="layer hex" data-depth="0.30"><!-- parallax layer --></div>
+    <div class="layer" data-depth="0.80"><!-- parallax layer --></div>
+    <div id="color" class="layer" data-depth="0.001"><!-- parallax layer color fade in --></div>
+
     <div id="navRow" class="row navRow">
       <div id="stickyLogo" class="column large-2 small-6 hidden">
         <a href="index"><img src="img/icons/logo_horizontal.svg" alt="Heff's Hives logo"></a>
@@ -41,6 +46,7 @@
         </ul>
       </nav>
     </div>
+    <div id="splashContent" class="layer" data-depth="1.20">
       <div class="row">
         <div id="logo" class="column small-12 small-centered">
           <a href="index"><img src="img/icons/logo.svg" alt="Heff's Hives Logo"></a>
@@ -52,7 +58,7 @@
         </div>
       </div>
       <div class="row">
-        <div id="socialIcons" class="column small-2 small-centered">
+        <div id="socialIcons" class="column small-5 large-2 small-centered">
           <ul>
             <li><a href="https://www.facebook.com/HeffsHoney/" target="_blank"><img src="img/icons/twitter.svg" alt="Twitter"></a></li>
             <li><a href="https://www.facebook.com/HeffsHoney/" target="_blank"><img src="img/icons/facebook.svg" alt="Facebook"></a></li>
@@ -61,8 +67,9 @@
         </div>
       </div>
       <div class="row">
-        <div id="scrollArrow" class="column small-2 small-centered">
+        <div id="scrollArrow" class="column small-5 large-2 small-centered">
           <img id="chevron" src="img/icons/scroll.svg" alt="Chevron">
         </div>
+      </div>
       </div>
   </header>
