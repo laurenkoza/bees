@@ -28,6 +28,7 @@
           <div class="hamburgerBar"></div>
         </button>
       </div>
+
       <nav id="mainNav" class="column small-12 large-6 large-offset-4 staticNav">
         <ul>
           <li><a href="learn">Learn</a>
@@ -49,10 +50,9 @@
       <div class="row">
         <div id="logo" class="column small-12 small-centered">
           <a href="index"><img src="img/icons/logo.svg" alt="Heff's Hives Logo"></a>
-          <div class="divider"></div>
           <div class="row">
             <div id="logoText" class="column small-12 small-centered">
-              <h2><?php echo $header;?></h2>
+              <img src="img/icons/logoText.svg" alt="Heff's Hives Logo">
             </div>
           </div>
         </div>

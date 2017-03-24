@@ -1,0 +1,348 @@
+@import url(desktop.css);
+body {
+  color: #5c5b5c;
+  margin-left: auto;
+  margin-right: auto; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Montserrat", sans-serif; }
+
+p, a, li {
+  font-family: "Open Sans", sans-serif; }
+
+.hide {
+  display: none; }
+
+#homeHeader {
+  background-image: url("../img/home/splash.jpg");
+  background-size: cover; }
+
+#learnHeader {
+  background-image: url("../img/learn/learnsplash.jpg");
+  background-size: cover; }
+
+#servicesHeader {
+  background-image: url("../img/contact/contactsplash.jpg");
+  background-size: cover; }
+
+#shopHeader {
+  background-image: url("../img/shop/shopsplash.jpg");
+  background-size: cover; }
+
+#contactHeader {
+  background-image: url("../img/contact/contactsplash.jpg");
+  background-size: cover; }
+
+.mainContent {
+  padding-top: 6.25em; }
+
+header {
+  /* Set a specific height */
+  height: 100vh;
+  /* Create the parallax scrolling effect */
+  background-repeat: repeat-y;
+  background-size: cover;
+  text-align: center;
+  background-color: #f6c421; }
+  header .navRow {
+    background-color: #4a494a;
+    margin-bottom: 3.5em; }
+  header .hamburgerBar {
+    height: 0.1875em;
+    background-color: #f6c421;
+    width: 100%;
+    margin-top: 0.5em;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease; }
+  header .barOpen:first-child {
+    transform: rotate(45deg);
+    margin-top: 16px; }
+  header .barOpen:nth-child(2) {
+    transform: rotate(-45deg);
+    margin-top: -3px; }
+  header .barOpen:last-child {
+    opacity: 0; }
+  header #hamburgerIcon button {
+    display: block;
+    width: 100%; }
+  header #stickyLogo img {
+    width: 75%;
+    padding-top: 0.625em;
+    padding-bottom: 0.625em; }
+  header #mainNav {
+    height: 0vh;
+    overflow: hidden; }
+    header #mainNav ul li {
+      list-style-type: none; }
+      header #mainNav ul li a {
+        text-transform: uppercase;
+        display: block;
+        color: #fff;
+        letter-spacing: 0.0555em;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 700;
+        font-size: 1.125em;
+        padding-top: 0.2777em;
+        padding-bottom: 0.2777em;
+        padding-left: 0.8333em;
+        padding-right: 0.8333em; }
+        header #mainNav ul li a:hover + .hoverBar {
+          width: 100%;
+          left: 0%; }
+      header #mainNav ul li .hoverBar {
+        -webkit-transition: all 0.5s ease;
+        transition: all 0.5s ease;
+        width: 0;
+        position: relative;
+        left: 50%;
+        height: 0.1875em;
+        background-color: #fff; }
+  header #logo img {
+    width: 30%;
+    padding-bottom: 0.5em; }
+  header #logo .divider {
+    height: 0.3125em;
+    background-color: #fff;
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1.25em;
+    margin-bottom: 1.25em; }
+  header #logo #logoText img {
+    width: 90%;
+    padding-top: 1.5em;
+    padding-bottom: 0.5em; }
+  header #logo #logoText h2 {
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.5em; }
+  header h1 {
+    font-family: "Open Sans", sans-serif;
+    line-height: 1.3em;
+    font-size: 2.75em;
+    font-weight: 300;
+    color: #fff;
+    text-align: center; }
+  header #socialIcons {
+    padding-top: 1.5em;
+    padding-bottom: 0.5em; }
+    header #socialIcons ul {
+      overflow: hidden;
+      list-style-type: none;
+      margin: 0; }
+      header #socialIcons ul li {
+        display: inline;
+        width: 33%;
+        float: left; }
+  header #scrollArrow img {
+    width: 40%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto; }
+
+.mainContent {
+  background-color: #fff; }
+  .mainContent .sideBorder {
+    border-left: none;
+    border-top: 3px solid #f6c421;
+    padding-left: 0;
+    padding-top: 13px; }
+  .mainContent #secondaryNav, .mainContent #services {
+    padding-bottom: 6.25em; }
+    .mainContent #secondaryNav #navHeading, .mainContent #services #navHeading {
+      padding-bottom: 3.125em; }
+      .mainContent #secondaryNav #navHeading h3, .mainContent #secondaryNav #navHeading h2, .mainContent #services #navHeading h3, .mainContent #services #navHeading h2 {
+        text-align: center;
+        font-size: 1.5em;
+        font-weight: 300; }
+      .mainContent #secondaryNav #navHeading h2, .mainContent #services #navHeading h2 {
+        color: #f6c421;
+        font-weight: 700; }
+    .mainContent #secondaryNav .iconBlock, .mainContent #services .iconBlock {
+      margin-bottom: 60px;
+      text-align: center; }
+      .mainContent #secondaryNav .iconBlock img, .mainContent #services .iconBlock img {
+        width: 35%;
+        padding-bottom: 1.3em; }
+      .mainContent #secondaryNav .iconBlock .iconBlockHeading, .mainContent #services .iconBlock .iconBlockHeading {
+        color: #f6c421;
+        font-weight: 700;
+        font-family: "Montserrat", sans-serif;
+        font-size: 1.5em; }
+      .mainContent #secondaryNav .iconBlock .navLinkBody, .mainContent #services .iconBlock .navLinkBody {
+        line-height: 1.35em;
+        font-family: "Open Sans", sans-serif;
+        font-size: 1.25em; }
+  .mainContent .infoBlock {
+    padding-top: 2.8125em;
+    padding-bottom: 2.8125em; }
+    .mainContent .infoBlock p, .mainContent .infoBlock h3 {
+      color: #fff;
+      font-size: 1em; }
+  .mainContent h3 {
+    text-transform: uppercase;
+    font-weight: 700; }
+  .mainContent #story {
+    background-image: url("../img/home/homebg2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat; }
+  .mainContent #mission p {
+    color: #5c5b5c; }
+  .mainContent #beeGuardian {
+    background-image: url("../img/home/homebg1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat; }
+  .mainContent .infoHeading {
+    text-transform: uppercase;
+    color: #f6c421;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.5em;
+    font-weight: 700; }
+  .mainContent .contactHeading {
+    letter-spacing: 1px;
+    margin-bottom: 25px;
+    font-weight: 900; }
+  .mainContent #map {
+    height: 400px;
+    z-index: 1; }
+  .mainContent #addressInfo {
+    background-color: #4a494a;
+    color: #f6c421;
+    padding-top: 16px;
+    padding-bottom: 1px;
+    padding-left: 25px; }
+    .mainContent #addressInfo h1 {
+      text-transform: uppercase;
+      font-size: 20px;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 700;
+      margin-bottom: 0; }
+    .mainContent #addressInfo p {
+      font-family: "Open Sans", sans-serif; }
+  .mainContent #contactForm {
+    margin-top: 1.5625em;
+    margin-bottom: 5em; }
+    .mainContent #contactForm form label {
+      text-transform: uppercase;
+      color: #f6c421;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 700; }
+    .mainContent #contactForm form input, .mainContent #contactForm form textarea {
+      box-shadow: none;
+      border: 1px solid #dddddd;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      padding-left: 20px;
+      padding-right: 20px; }
+      .mainContent #contactForm form input ::-webkit-input-placeholder, .mainContent #contactForm form textarea ::-webkit-input-placeholder {
+        text-transform: capitalize; }
+    .mainContent #contactForm form #submit {
+      background: none;
+      border: none;
+      letter-spacing: 2px;
+      color: #f6c421;
+      text-align: center;
+      text-transform: uppercase;
+      padding: 15px;
+      display: block;
+      font-family: "Montserrat", sans-serif;
+      font-size: 40px;
+      font-weight: 700;
+      margin-left: auto;
+      margin-right: auto; }
+
+footer {
+  background-color: #5c5b5c;
+  text-align: center;
+  padding-top: 1.5em;
+  padding-bottom: 1.5em; }
+  footer #copyright {
+    margin: 0;
+    color: #fff;
+    font-family: "Open Sans", sans-serif;
+    font-size: 0.7em; }
+
+::-webkit-input-placeholder {
+  text-transform: capitalize; }
+
+.mainContent #ourServices {
+  padding-top: 0; }
+  .mainContent #ourServices p {
+    color: #5c5b5c; }
+.mainContent #services {
+  padding-top: 3.25em; }
+  .mainContent #services p {
+    text-align: left;
+    font-size: 1em; }
+  .mainContent #services .service h2 {
+    text-transform: uppercase; }
+  .mainContent #services .service .price {
+    text-transform: uppercase;
+    text-align: center;
+    padding-bottom: 10px;
+    font-size: 1em;
+    font-weight: 700; }
+  .mainContent #services .service .takeaway {
+    font-style: italic;
+    line-height: 2.5em; }
+  .mainContent #services .service .add {
+    font-weight: 700; }
+.mainContent #boutique {
+  background-image: url("../img/home/homebg2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat; }
+  .mainContent #boutique li {
+    color: #fff; }
+
+.mainContent .shopItem {
+  margin-top: 50px;
+  margin-bottom: 50px; }
+  .mainContent .shopItem:last-child {
+    margin-bottom: 80px; }
+.mainContent .shopItemName {
+  color: #f6c421; }
+.mainContent .shopPrice {
+  color: #fff;
+  background-color: #333;
+  width: inherit;
+  font-weight: 700;
+  padding: 5px 5px; }
+
+.mainContent .dots {
+  overflow: hidden;
+  margin: 20px auto; }
+  .mainContent .dots .dot {
+    width: 15%;
+    height: 40px;
+    display: block;
+    float: left;
+    border: solid 2px #f6c421;
+    border-radius: 100%;
+    margin-left: 5%;
+    margin-right: 5%; }
+    .mainContent .dots .dot:first-child {
+      background-color: #f6c421; }
+.mainContent #callToAction {
+  background-image: url("../img/home/homebg1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  padding-top: 30px;
+  padding-bottom: 15px;
+  margin-top: 50px;
+  margin-bottom: 50px; }
+  .mainContent #callToAction p {
+    text-align: center;
+    text-transform: none; }
+  .mainContent #callToAction a {
+    font-family: "Montserrat", sans-serif;
+    color: #f6c421;
+    text-transform: uppercase;
+    font-weight: 700; }
+.mainContent .hideText {
+  display: none; }
+.mainContent #blog {
+  margin-top: 30px;
+  margin-bottom: 100px; }
+
+/*# sourceMappingURL=app.css.map */
