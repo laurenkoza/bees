@@ -1,4 +1,5 @@
 @import url(desktop.css);
+@import url(tablet.css);
 body {
   color: #5c5b5c;
   margin-left: auto;
@@ -14,23 +15,19 @@ p, a, li {
   display: none; }
 
 #homeHeader {
-  background-image: url("../img/home/splash.jpg");
+  background-image: url("../img/splashImg/homeHeader.jpg");
   background-size: cover; }
 
 #learnHeader {
-  background-image: url("../img/learn/learnsplash.jpg");
-  background-size: cover; }
-
-#servicesHeader {
-  background-image: url("../img/contact/contactsplash.jpg");
+  background-image: url("../img/splashImg/learnHeader.jpg");
   background-size: cover; }
 
 #shopHeader {
-  background-image: url("../img/shop/shopsplash.jpg");
+  background-image: url("../img/splashImg/shopHeader.jpg");
   background-size: cover; }
 
 #contactHeader {
-  background-image: url("../img/contact/contactsplash.jpg");
+  background-image: url("../img/splashImg/contactHeader.jpg");
   background-size: cover; }
 
 .mainContent {
@@ -42,8 +39,9 @@ header {
   /* Create the parallax scrolling effect */
   background-repeat: repeat-y;
   background-size: cover;
-  text-align: center;
-  background-color: #f6c421; }
+  text-align: center; }
+  header .layer .parallaxImg {
+    display: none; }
   header .navRow {
     background-color: #4a494a;
     margin-bottom: 3.5em; }
@@ -69,34 +67,40 @@ header {
     width: 75%;
     padding-top: 0.625em;
     padding-bottom: 0.625em; }
+  header .stickyNavRow {
+    position: fixed;
+    width: 100%;
+    z-index: 2; }
   header #mainNav {
     height: 0vh;
     overflow: hidden; }
-    header #mainNav ul li {
-      list-style-type: none; }
-      header #mainNav ul li a {
-        text-transform: uppercase;
-        display: block;
-        color: #fff;
-        letter-spacing: 0.0555em;
-        font-family: "Montserrat", sans-serif;
-        font-weight: 700;
-        font-size: 1.125em;
-        padding-top: 0.2777em;
-        padding-bottom: 0.2777em;
-        padding-left: 0.8333em;
-        padding-right: 0.8333em; }
-        header #mainNav ul li a:hover + .hoverBar {
-          width: 100%;
-          left: 0%; }
-      header #mainNav ul li .hoverBar {
-        -webkit-transition: all 0.5s ease;
-        transition: all 0.5s ease;
-        width: 0;
-        position: relative;
-        left: 50%;
-        height: 0.1875em;
-        background-color: #fff; }
+    header #mainNav ul {
+      margin-top: 10px; }
+      header #mainNav ul li {
+        list-style-type: none; }
+        header #mainNav ul li a {
+          text-transform: uppercase;
+          display: block;
+          color: #fff;
+          letter-spacing: 0.0555em;
+          font-family: "Montserrat", sans-serif;
+          font-weight: 700;
+          font-size: 1.125em;
+          padding-top: 0.2777em;
+          padding-bottom: 0.2777em;
+          padding-left: 0.8333em;
+          padding-right: 0.8333em; }
+          header #mainNav ul li a:hover + .hoverBar {
+            width: 50%;
+            left: 25%; }
+        header #mainNav ul li .hoverBar {
+          -webkit-transition: all 0.5s ease;
+          transition: all 0.5s ease;
+          width: 0;
+          position: relative;
+          left: 50%;
+          height: 0.1875em;
+          background-color: #fff; }
   header #logo img {
     width: 30%;
     padding-bottom: 0.5em; }
@@ -116,13 +120,6 @@ header {
     color: #fff;
     font-family: "Montserrat", sans-serif;
     font-size: 1.5em; }
-  header h1 {
-    font-family: "Open Sans", sans-serif;
-    line-height: 1.3em;
-    font-size: 2.75em;
-    font-weight: 300;
-    color: #fff;
-    text-align: center; }
   header #socialIcons {
     padding-top: 1.5em;
     padding-bottom: 0.5em; }
@@ -159,7 +156,6 @@ header {
         color: #f6c421;
         font-weight: 700; }
     .mainContent #secondaryNav .iconBlock, .mainContent #services .iconBlock {
-      margin-bottom: 60px;
       text-align: center; }
       .mainContent #secondaryNav .iconBlock img, .mainContent #services .iconBlock img {
         width: 35%;
@@ -185,13 +181,15 @@ header {
   .mainContent #story {
     background-image: url("../img/home/homebg2.jpg");
     background-size: cover;
-    background-repeat: no-repeat; }
+    background-repeat: no-repeat;
+    background-position: right; }
   .mainContent #mission p {
     color: #5c5b5c; }
   .mainContent #beeGuardian {
     background-image: url("../img/home/homebg1.jpg");
     background-size: cover;
-    background-repeat: no-repeat; }
+    background-repeat: no-repeat;
+    background-position: right; }
   .mainContent .infoHeading {
     text-transform: uppercase;
     color: #f6c421;
@@ -221,7 +219,7 @@ header {
       font-family: "Open Sans", sans-serif; }
   .mainContent #contactForm {
     margin-top: 1.5625em;
-    margin-bottom: 5em; }
+    padding-bottom: 5em; }
     .mainContent #contactForm form label {
       text-transform: uppercase;
       color: #f6c421;
@@ -302,9 +300,10 @@ footer {
 .mainContent .shopItemName {
   color: #f6c421; }
 .mainContent .shopPrice {
+  text-align: center;
   color: #fff;
   background-color: #333;
-  width: inherit;
+  width: 35%;
   font-weight: 700;
   padding: 5px 5px; }
 

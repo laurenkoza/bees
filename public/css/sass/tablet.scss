@@ -1,0 +1,137 @@
+//font families
+$headingFonts: 'Montserrat', sans-serif;
+$bodyFonts: 'Open Sans', sans-serif;
+
+//colors
+$yellow: #f6c421;
+$grey: #5c5b5c;
+
+@media screen and (min-width: 768px) {
+  body {
+    header {
+      #stickyLogo {
+        img {
+          width: 65%;
+          padding: {
+            top: 0.8em;
+            bottom: 0.8em;
+          }
+        }
+      }
+      .hamburgerBar {
+        height: 0.3em;
+        margin-top: 1em;
+        width: 85%;
+      }
+
+      .barOpen {
+        &:first-child {
+          transform: rotate(45deg);
+          margin-top: 45px;
+        }
+        &:nth-child(2) {
+          transform: rotate(-45deg);
+          margin-top: -3px;
+        }
+        &:last-child {
+          opacity: 0;
+        }
+      }
+      #mainNav {
+        ul {
+          li {
+            a {
+              font: {
+                size: 2em;
+              }
+            }
+          }
+        }
+      }
+
+       //splash image logo
+      #logo {
+        img {
+          width: 25%;
+          padding: {
+            bottom: 1.5em;
+          }
+        }
+        #logoText {
+          img {
+            width: 70%;
+          }
+          h2 {
+            font: {
+              size: 2.5em;
+            }
+          }
+        }//logotext close
+      }//logo close
+    }//header close
+
+    ///////////////////////////////////////////////////////
+    //HOME PAGE
+    ///////////////////////////////////////////////////////
+    .mainContent {
+      #secondaryNav, #services {
+        #navHeading {
+          h3, h2 {
+            font: {
+              size: 2.5em;
+            }
+          }
+        }
+        .iconBlock {
+          margin: {
+            top: 60px;
+          }
+          .iconBlockHeading {
+            font: {
+              size: 2.5em;
+            }
+          }
+          .navLinkBody {
+            font: {
+              size: 1.75em;
+            }
+          }
+        }
+      }
+    }
+
+    ///////////////////////////////////////////////////////
+    //SHOP PAGE
+    ///////////////////////////////////////////////////////
+    .mainContent {
+      .shopPrice {
+        width: 15%;
+      }
+    }
+    ///////////////////////////////////////////////////////
+    //CONTACT PAGE
+    ///////////////////////////////////////////////////////
+    .mainContent {
+      #address {
+        .contactHeading {
+          padding: {
+            left: 20spx;
+          }
+          font: {
+            size: 2.5em;
+          }
+        }
+      }
+      #contactForm {
+        form {
+          label {
+            font: {
+              size: 1.3em;
+            }
+          }
+        }
+      }
+    }
+
+  }//body close
+}//media query close

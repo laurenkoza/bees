@@ -4,7 +4,7 @@
  <section class="mainContent">
    <!-- main content -->
    <div id="address" class="row small-collapse">
-     <div class="column small-11 small-offset-1 large-2 large-offset-2">
+     <div class="column small-11 small-offset-1 medium-offset-0 large-2 large-offset-2">
        <h2 class="infoHeading contactHeading"><?php echo $title;?></h2>
      </div>
      <div id="map" class="column small-12 large-8 large-centered">

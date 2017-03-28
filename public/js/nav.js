@@ -12,7 +12,7 @@
 
   //change to sticky nav on scroll
   function stickyNav() {
-    if(window.pageYOffset>=(window.innerHeight * 1.5)) {
+    if(window.pageYOffset>=window.innerHeight) {
       console.log("scrolled");
       mainNav.className = "column large-6 stickyNav";
       navRow.className = "stickyNavRow expanded row navRow";

@@ -7,301 +7,294 @@ $yellow: #f6c421;
 $grey: #5c5b5c;
 
 @media screen and (min-width: 1200px) {
-
-  body {
-    //parallaxing layers
-    //header holds all the layers
-    header {
-      height: 150vh;
-      overflow: hidden;
-      position: relative;
-    }
-    //layers that each contain a different element for the parallax
-    .layer
-    {
-      background-position: bottom center;
-      background-size: auto;
-      background-repeat: no-repeat;
-      width: 100%;
-      height: 150vh;
-      position: fixed;
-      z-index: -1;
-    }
-    //layer that fades in as you scroll
-    #color {
-      opacity: 0;
-      background-color: $yellow;
-    }
-
-    //bring content to the front layer so the social icons
-    //chevron and logo are all still clickable
-    #splashContent {
-      z-index: 1;
-    }
-    //hexagon shapes at the top and bottom corners of the header
-    .hex {
-      background-image: url('../img/icons/hex.svg');
-      background-position: left center;
-      background-size: cover;
-      opacity: 0.3;
-    }
-    //end of the parallaxing code
-    header {
-      background-color: transparent;
-      .navRow {
-        background-color: transparent;
-        margin: {
-          bottom: 0;
+  html {
+    body {
+      //remove header bg images so parallax headers take over
+      #homeHeader, #learnHeader, #servicesHeader, #shopHeader, #contactHeader {
+        background-image: none;
+      }
+      //parallaxing layers
+      //header holds all the layers
+      header {
+        height: 100vh;
+        // overflow: hidden;
+        position: relative;
+      }
+      //layers that each contain a different element for the parallax
+      .layer
+      {
+        background-position: bottom center;
+        background-size: auto;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 125vh;
+        position: fixed;
+        z-index: -1;
+        overflow: visible;
+        .parallaxImg {
+          display: block;
+          width: 100%;
+          position: relative;
+          bottom: 20%;
         }
       }
-      #mainNav {
-        ul {
+      //layer that fades in as you scroll
+      #color {
+        opacity: 0;
+        background-color: $yellow;
+      }
+
+      //bring content to the front layer so the social icons
+      //chevron and logo are all still clickable
+      #splashContent {
+        z-index: 1;
+      }
+      //hexagon shapes at the top and bottom corners of the header
+      .hex {
+        background-image: url('../img/icons/hex.svg');
+        background-position: left center;
+        background-size: cover;
+        opacity: 0.3;
+      }
+      //end of the parallaxing code
+      header {
+        background-color: transparent;
+        .navRow {
+          background-color: transparent;
           margin: {
             bottom: 0;
           }
-          li {
-            display: inline-block;
-            a {
-              text-transform: uppercase;
-              display: block;
+        }
+        #mainNav {
+          ul {
+            margin: {
+              bottom: 0;
+              top: 0;
+            }
+            li {
+              display: inline-block;
+              a {
+                font: {
+                  size: 1.125em;//18/16
+                }
+                &:hover + .hoverBar {
+                  width: 100%;
+                  left: 0%;
+                }
+              }
+            }
+          }
+        }
+        //hide the mobile nav
+        .hidden {
+            display: none;
+        }
+        //sticky nav classes
+        //these take effect when the user scrolls to the main content
+        .stickyNavRow {
+          position: fixed;
+          width: 100%;
+          background-color: #4a494a;
+          z-index: 2;
+        }
+        .staticNav {
+          padding: {
+            top: 2.5em;//40/16
+            bottom: 3.5em;
+          }
+
+        }
+        .stickyNav {
+          padding: {
+            top: 0.625em;//10/16
+          }
+        }
+        //logo on splash screen
+        #logo {
+          img {
+            width: 15%;
+            padding: {
+              bottom: 1.5em;
+            }
+          }
+          //white line under logo on all screens but the home
+          .divider {
+            height: 0.3125em;//5/16
+            background-color: #fff;
+            width: 15%;
+            margin: {
+              left: auto;
+              right: auto;
+              top: 1.25em;//20/16
+              bottom: 1.25em;//20/16
+            }
+          }
+          //img is HEFFS HIVES text on home screen
+          //h2 is heading on all other screens
+          #logoText {
+            img {
+              width: 40%;
+              padding: {
+                top: 3em;
+                bottom: 2.5em;
+              }
+            }
+            h2 {
               color: #fff;
-              letter-spacing: 0.0555em;//1/18
               font: {
                 family: $headingFonts;
-                weight: 700;
-                size: 1.125em;//18/16
+                size: 2.5em;
               }
-              padding: {
-                top: 0.2777em; //5/18
-                bottom: 0.2777em; //5/18
-                left: 0.8333em;//15/18
-                right: 0.8333em;//15/18
-              }
-              &:hover + .hoverBar {
-                width: 100%;
-                left: 0%;
-              }
-            }
-            .hoverBar {
-              transition: all 0.5s ease;
-              width: 0%;
-              position: relative;
-              left: 50%;
-              height: 0.1875em;//3/16
-              background-color: #fff;
             }
           }
-        }
       }
-      //hide the mobile nav
-      .hidden {
-          display: none;
-      }
-      //sticky nav classes
-      //these take effect when the user scrolls to the main content
-      .stickyNavRow {
-        position: fixed;
-        width: 100%;
-        background-color: #4a494a;
-        z-index: 2;
-      }
-      .staticNav {
-        padding: {
-          top: 2.5em;//40/16
-          bottom: 3.5em;
-        }
+      }//header
 
-      }
-      .stickyNav {
+    .mainContent {
+      //yellow line down the left side of various text boxes
+      .sideBorder {
+        border-left: solid 6px $yellow;
+        border-top: none;
         padding: {
-          top: 0.625em;//10/16
+          left: 20px;
+          top: 0;
         }
       }
-      //logo on splash screen
-      #logo {
-        img {
-          width: 15%;
+      ul.sideBorder {
+        padding: {
+          left: 40px;
+        }
+      }
+      //headings for most paragraphs
+      .infoHeading {
+          size: 2.1875em;//35/16
+      }
+
+      //home page
+      .service {
+        clear: none !important; //without the !important foundation overrides these styles on the second .services section but not the first
+        float: left !important;
+        .iconBlock {
+          float: none !important;
+        }
+      }
+      #secondaryNav, #services {
+        overflow: hidden;
+        #navHeading {
           padding: {
-            bottom: 1.5em;
+            bottom: 3.125em;//50/16
           }
-        }
-        //white line under logo on all screens but the home
-        .divider {
-          height: 0.3125em;//5/16
-          background-color: #fff;
-          width: 15%;
-          margin: {
-            left: auto;
-            right: auto;
-            top: 1.25em;//20/16
-            bottom: 1.25em;//20/16
-          }
-        }
-        //img is HEFFS HIVES text on home screen
-        //h2 is heading on all other screens
-        #logoText {
-          img {
-            width: 40%;
-            padding: {
-              top: 3em;
-              bottom: 2.5em;
+          h3, h2 {
+            font: {
+              size: 3.125em;//50/16
+              weight: 300;
             }
           }
           h2 {
-            color: #fff;
+            color: $yellow;
             font: {
-              family: $headingFonts;
-              size: 2.5em;
+              weight: 700;
             }
           }
         }
-    }
-    }//header
-
-  .mainContent {
-    //yellow line down the left side of various text boxes
-    .sideBorder {
-      border-left: solid 6px $yellow;
-      border-top: none;
-      padding: {
-        left: 20px;
-        top: 0;
-      }
-    }
-    ul.sideBorder {
-      padding: {
-        left: 40px;
-      }
-    }
-    //headings for most paragraphs
-    .infoHeading {
-        size: 2.1875em;//35/16
-    }
-
-    //home page
-    .service {
-      clear: none !important; //without the !important foundation overrides these styles on the second .services section but not the first
-      float: left !important;
-      .iconBlock {
-        float: none !important;
-      }
-    }
-    #secondaryNav, #services {
-      overflow: hidden;
-      #navHeading {
-        padding: {
-          bottom: 3.125em;//50/16
-        }
-        h3, h2 {
-          font: {
-            size: 3.125em;//50/16
-            weight: 300;
+        .iconBlock {
+          float: left;
+          clear: none;
+          text-align: center;
+          margin: {
+            bottom: 0;
           }
-        }
-        h2 {
-          color: $yellow;
-          font: {
-            weight: 700;
+          img {
+            width: 35%;
+            padding: {
+              bottom: 1.3em;
+            }
+          }
+          .iconBlockHeading {
+            color: $yellow;
+            font: {
+              weight: 700;
+              family: $headingFonts;
+              size: 2.1875em;//35/16
+            }
+          }
+          .navLinkBody {
+            line-height: 1.35em;//27/20
+            font: {
+              family: $bodyFonts;
+              size: 1.25em;//20/16
+            }
           }
         }
       }
-      .iconBlock {
-        float: left;
-        clear: none;
-        text-align: center;
+
+      //shop page
+
+      .shopItem {
         margin: {
-          bottom: 0;
+          top: 40px;
+          bottom: 40px;
         }
-        img {
-          width: 35%;
-          padding: {
-            bottom: 1.3em;
+
+        .shopPrice {
+          text-align: center;
+          width: 10%;
+        }
+
+      }
+
+      //learn page
+      #callToAction {
+        // padding: {
+        //   top: 15px;
+        //   bottom: 0px;
+        // }
+      }
+      .hideText {
+        display: block;
+      }
+      #readMore {
+        display: none;
+      }
+
+      #contactForm {
+        form {
+          input, textarea {
+            padding: {
+              top: 30px;
+              bottom: 30px;
+              left: 30px;
+              right: 30px;
+            }
+            ::-webkit-input-placeholder {
+              text-transform: capitalize;
+            }
+          }
+          .paddingFixLeft {
+            padding: {
+              left: 0.9375em;//15/16
+            }
+          }
+          .paddingFixRight {
+            padding: {
+              right: 0.9375em;//15/16
+            }
           }
         }
-        .iconBlockHeading {
-          color: $yellow;
-          font: {
-            weight: 700;
-            family: $headingFonts;
-            size: 2.1875em;//35/16
-          }
-        }
-        .navLinkBody {
-          line-height: 1.35em;//27/20
-          font: {
-            family: $bodyFonts;
-            size: 1.25em;//20/16
-          }
+      }//#contactForm closer
+    }//maincontent close
+
+    footer {
+      padding: {
+        top: 2.1875em;//35/16
+        bottom: 2.1875em;//35/16
+      }
+      #copyright {
+        font: {
+          size: 0.8125em;//13/16
         }
       }
     }
-
-    //shop page
-
-    .shopItem {
-      margin: {
-        top: 40px;
-        bottom: 40px;
-      }
-
-      .shopPrice {
-        text-align: center;
-        width: 10%;
-      }
-
-    }
-
-    //learn page
-    #callToAction {
-      // padding: {
-      //   top: 15px;
-      //   bottom: 0px;
-      // }
-    }
-    .hideText {
-      display: block;
-    }
-    #readMore {
-      display: none;
-    }
-
-    #contactForm {
-      form {
-        input, textarea {
-          padding: {
-            top: 30px;
-            bottom: 30px;
-            left: 30px;
-            right: 30px;
-          }
-          ::-webkit-input-placeholder {
-            text-transform: capitalize;
-          }
-        }
-        .paddingFixLeft {
-          padding: {
-            left: 0.9375em;//15/16
-          }
-        }
-        .paddingFixRight {
-          padding: {
-            right: 0.9375em;//15/16
-          }
-        }
-      }
-    }//#contactForm closer
-  }//maincontent close
-
-  footer {
-    padding: {
-      top: 2.1875em;//35/16
-      bottom: 2.1875em;//35/16
-    }
-    #copyright {
-      font: {
-        size: 0.8125em;//13/16
-      }
-    }
+    }//body
   }
-  }//body
 }//media query closer

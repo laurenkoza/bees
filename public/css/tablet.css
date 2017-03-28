@@ -1,0 +1,43 @@
+@media screen and (min-width: 768px) {
+  body header #stickyLogo img {
+    width: 65%;
+    padding-top: 0.8em;
+    padding-bottom: 0.8em; }
+  body header .hamburgerBar {
+    height: 0.3em;
+    margin-top: 1em;
+    width: 85%; }
+  body header .barOpen:first-child {
+    transform: rotate(45deg);
+    margin-top: 45px; }
+  body header .barOpen:nth-child(2) {
+    transform: rotate(-45deg);
+    margin-top: -3px; }
+  body header .barOpen:last-child {
+    opacity: 0; }
+  body header #mainNav ul li a {
+    font-size: 2em; }
+  body header #logo img {
+    width: 25%;
+    padding-bottom: 1.5em; }
+  body header #logo #logoText img {
+    width: 70%; }
+  body header #logo #logoText h2 {
+    font-size: 2.5em; }
+  body .mainContent #secondaryNav #navHeading h3, body .mainContent #secondaryNav #navHeading h2, body .mainContent #services #navHeading h3, body .mainContent #services #navHeading h2 {
+    font-size: 2.5em; }
+  body .mainContent #secondaryNav .iconBlock, body .mainContent #services .iconBlock {
+    margin-top: 60px; }
+    body .mainContent #secondaryNav .iconBlock .iconBlockHeading, body .mainContent #services .iconBlock .iconBlockHeading {
+      font-size: 2.5em; }
+    body .mainContent #secondaryNav .iconBlock .navLinkBody, body .mainContent #services .iconBlock .navLinkBody {
+      font-size: 1.75em; }
+  body .mainContent .shopPrice {
+    width: 15%; }
+  body .mainContent #address .contactHeading {
+    padding-left: 20spx;
+    font-size: 2.5em; }
+  body .mainContent #contactForm form label {
+    font-size: 1.3em; } }
+
+/*# sourceMappingURL=tablet.css.map */

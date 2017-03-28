@@ -1,5 +1,6 @@
 //import media queries
-@import 'desktop.css';
+@import "desktop.css";
+@import "tablet.css";
 //font families
 $headingFonts: 'Montserrat', sans-serif;
 $bodyFonts: 'Open Sans', sans-serif;
@@ -33,23 +34,23 @@ p,a,li {
 }
 //different header background images for each page
 #homeHeader {
-  background-image: url('../img/home/splash.jpg');
+  background-image: url('../img/splashImg/homeHeader.jpg');
   background-size: cover;
 }
 #learnHeader {
-  background-image: url('../img/learn/learnsplash.jpg');
+  background-image: url('../img/splashImg/learnHeader.jpg');
   background-size: cover;
 }
-#servicesHeader {
-  background-image: url('../img/contact/contactsplash.jpg');
-  background-size: cover;
-}
+// #servicesHeader {
+//   background-image: url('../img/splashImg/contactHeader.jpg');
+//   background-size: cover;
+// }
 #shopHeader {
-  background-image: url('../img/shop/shopsplash.jpg');
+  background-image: url('../img/splashImg/shopHeader.jpg');
   background-size: cover;
 }
 #contactHeader {
-  background-image: url('../img/contact/contactsplash.jpg');
+  background-image: url('../img/splashImg/contactHeader.jpg');
   background-size: cover;
 }
 .mainContent {
@@ -66,8 +67,13 @@ header {
   background-repeat: repeat-y;
   background-size: cover;
   text-align: center;
-  background-color: $yellow;
+  // background-color: $yellow;
   //background color and margin needed at mobile but not desktop
+  .layer {
+    .parallaxImg {
+      display: none;
+    }
+  }
   .navRow {
     background-color: #4a494a;
     margin: {
@@ -113,11 +119,18 @@ header {
       }
     }
   }
+  .stickyNavRow {
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+  }
     #mainNav {
       height: 0vh;
       overflow: hidden;
       ul {
-
+        margin: {
+          top: 10px;
+        }
         li {
           list-style-type: none;
           a {
@@ -137,8 +150,8 @@ header {
               right: 0.8333em;//15/18
             }
             &:hover + .hoverBar {
-              width: 100%;
-              left: 0%;
+              width: 50%;
+              left: 25%;
             }
           }
           .hoverBar {
@@ -153,6 +166,7 @@ header {
         }
       }
     }
+    //splash header logo
     #logo {
       img {
         width: 30%;
@@ -188,14 +202,16 @@ header {
         }
       }
   }
-  h1 {
-    font-family: $bodyFonts;
-    line-height: 1.3em;
-    font-size: 2.75em;
-    font-weight: 300;
-    color: #fff;
-    text-align: center;
-  }
+  //delete later i dont know what this is changeing
+  //pretty sure there is no h1
+  // h1 {
+  //   font-family: $bodyFonts;
+  //   line-height: 1.3em;
+  //   font-size: 2.75em;
+  //   font-weight: 300;
+  //   color: #fff;
+  //   text-align: center;
+  // }
   //social in header
   #socialIcons {
     padding: {
@@ -263,9 +279,6 @@ header {
       }
     }
     .iconBlock {
-      margin: {
-        bottom: 60px;
-      }
       text-align: center;
       img {
         width: 35%;
@@ -313,6 +326,7 @@ header {
     background-image: url('../img/home/homebg2.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: right;
   }
   #mission {
     p {
@@ -323,6 +337,7 @@ header {
     background-image: url('../img/home/homebg1.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: right;
   }
   .infoHeading {
     text-transform: uppercase;
@@ -377,6 +392,8 @@ header {
   #contactForm {
     margin: {
       top: 1.5625em;//25/16
+    }
+    padding: {
       bottom: 5em;//80/16
     }
     form {
@@ -527,9 +544,10 @@ footer {
     color: $yellow;
   }
   .shopPrice {
+    text-align: center;
     color: #fff;
     background-color: #333;
-    width: inherit;
+    width: 35%;
     font: {
       weight: 700;
     }
