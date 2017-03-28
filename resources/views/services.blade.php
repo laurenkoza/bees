@@ -1,7 +1,7 @@
  @include('layouts.header')
+ <div id="scrollAnchor"><!--anchor for scroll button--></div>
 <section class="mainContent">
   <h2 class="hide"><?php echo $title;?></h2>
-  <div id="scrollAnchor"><!--anchor for scroll button--></div>
   <div class="row">
     <section id="ourServices" class="column large-8 small-10 small-centered infoBlock">
       <h2 class="infoHeading">Our Services</h2>

@@ -1,7 +1,7 @@
 @include('layouts.headerHome')
+<div id="scrollAnchor"><!--anchor for scroll button--></div>
 <section class="mainContent">
   <!-- main content -->
-  <div id="scrollAnchor"><!--anchor for scroll button--></div>
   <section id="secondaryNav" class="row">
     <div id="navHeading" class="column small-12">
       <h3>Sustainable, "bee first"</h3>

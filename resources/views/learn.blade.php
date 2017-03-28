@@ -1,8 +1,8 @@
  @include('layouts.header')
+ <div id="scrollAnchor"><!--anchor for scroll button--></div>
 
 	<div class="mainContent">
     <h2 class="hide"><?php echo $title;?></h2>
-<div id="scrollAnchor"><!--anchor for scroll button--></div>
     <div class="row">
       <div id="infographic" class="column small-10 large-8 small-centered">
         <img src="img/learn/infographic_holder.svg" alt="Bee infographic">

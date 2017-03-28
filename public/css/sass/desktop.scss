@@ -21,8 +21,7 @@ $grey: #5c5b5c;
         position: relative;
       }
       //layers that each contain a different element for the parallax
-      .layer
-      {
+      .layer {
         background-position: bottom center;
         background-size: auto;
         background-repeat: no-repeat;
@@ -37,6 +36,9 @@ $grey: #5c5b5c;
           position: relative;
           bottom: 20%;
         }
+      }
+      .subLayer {
+        
       }
       //layer that fades in as you scroll
       #color {

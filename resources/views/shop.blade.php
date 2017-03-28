@@ -1,6 +1,6 @@
  @include('layouts.header')
+ <div id="scrollAnchor"><!--anchor for scroll button--></div>
     <div class="mainContent">
-      <div id="scrollAnchor"><!--anchor for scroll button--></div>
     <h2 class="hide"><?php echo $title;?></h2>
     <div id="shop" class="row">
       <div class="column small-10 large-8 small-centered shopItem">
