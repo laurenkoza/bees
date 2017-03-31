@@ -48,17 +48,17 @@
     </div>
     <div id="splashContent">
       <div class="row">
-        <div id="logo" class="column small-12 small-centered subLayer" data-depth="0.3">
+        <div id="logo" class="column small-12 small-centered subLayer" data-depth="0.5">
           <a href="index"><img src="img/icons/logo.svg" alt="Heff's Hives Logo"></a>
           <div class="row">
-            <div id="logoText" class="column small-12 small-centered subLayer" data-depth="0.5">
+            <div id="logoText" class="column small-12 small-centered subLayer" data-depth="0.6">
               <img src="img/icons/logoText.svg" alt="Heff's Hives Logo">
             </div>
           </div>
         </div>
       </div>
       <div class="row">
-        <div id="socialIcons" class="column small-5 medium-4 large-2 small-centered subLayer" data-depth="0.6">
+        <div id="socialIcons" class="column small-5 medium-4 large-2 small-centered subLayer" data-depth="0.8">
           <ul>
             <li><a href="https://www.facebook.com/HeffsHoney/" target="_blank"><img src="img/icons/twitter.svg" alt="Twitter"></a></li>
             <li><a href="https://www.facebook.com/HeffsHoney/" target="_blank"><img src="img/icons/facebook.svg" alt="Facebook"></a></li>
