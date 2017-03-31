@@ -45,16 +45,16 @@ Route::post('mail', function (){
 	return redirect()->back()->withErrors($validator->errors())->withInput();
 
 });
-Route::post('/test', 'LoginController@testing');
 
-Route::controller('cms', 'CmsController');
-
-Route::controller('/', 'HomeController');
-
-Route::auth();
-
-Route::controller('login', 'HomeController');
-
+/////////////////////////////////////////////
+//
+//
+//	ORDER OF ROUTE LINES VERY IMPORTANT
+//	DO NOT CHANGE THE ORDER OF THESES LINES
+//	OR THE SITE WILL BREAK
+//
+//
+/////////////////////////////////////////////
 Route::controller('contact', 'ContactController');
 
 Route::controller('learn', 'LearnController');
@@ -62,3 +62,13 @@ Route::controller('learn', 'LearnController');
 Route::controller('services', 'ServicesController');
 
 Route::controller('shop', 'ShopController');
+
+Route::post('/test', 'LoginController@testing');
+Route::post('/servicesUpdate', 'CmsController@updateServices');
+Route::controller('cms', 'CmsController');
+
+Route::controller('/', 'HomeController');
+
+Route::controller('login', 'HomeController');
+
+Route::auth();

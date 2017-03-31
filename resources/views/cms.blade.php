@@ -16,7 +16,8 @@
   <h2 class="cmsHeading">CONTENT MANAGMENT</h2>
 
   <div id="contactForm">
-    <form class="column small-12 large-8 large-centered" action="index.html" method="post">
+    <form class="column small-12 large-8 large-centered" action="servicesUpdate" method="post">
+      {{ csrf_field() }}
       <label for="serviceName">Serivce Name</label>
       <input type="text" name="serviceName" value="">
 

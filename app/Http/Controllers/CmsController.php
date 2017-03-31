@@ -40,7 +40,13 @@ class CmsController extends Controller
        $serviceDesc = request()->input('serviceDesc');
        $serviceBenefits = request()->input('serviceBenefits');
 
-       
-
+       DB::table('tbl_services')->where('service_id',3)->update([
+         'service_name'=>$serviceName,
+         'service_price'=>$servicePrice,
+         'service_visits'=>$serviceVisits,
+         'service_desc'=>$serviceDesc,
+         'service_benefit'=>$serviceBenefits
+       ]);
+      //  dd($dump);
      }
 }
