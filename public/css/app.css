@@ -344,4 +344,9 @@ footer {
   margin-top: 30px;
   margin-bottom: 100px; }
 
+.mainContent .cmsHeading {
+  text-align: center; }
+.mainContent #contactForm form label {
+  color: #5c5b5c; }
+
 /*# sourceMappingURL=app.css.map */
