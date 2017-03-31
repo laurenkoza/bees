@@ -41,10 +41,19 @@ Route::post('mail', function (){
 	    });
 	    return 'email sent';
 	}
-	
+
 	return redirect()->back()->withErrors($validator->errors())->withInput();
-		
+
 });
+Route::post('/test', 'LoginController@testing');
+
+Route::controller('cms', 'CmsController');
+
+Route::controller('/', 'HomeController');
+
+Route::auth();
+
+Route::controller('login', 'HomeController');
 
 Route::controller('contact', 'ContactController');
 
@@ -53,5 +62,3 @@ Route::controller('learn', 'LearnController');
 Route::controller('services', 'ServicesController');
 
 Route::controller('shop', 'ShopController');
-
-Route::controller('/', 'HomeController');

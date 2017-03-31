@@ -616,3 +616,19 @@ footer {
     }
   }
 }
+
+///////////////////////////////////////////////////////
+//CMS PAGE
+///////////////////////////////////////////////////////
+.mainContent {
+  .cmsHeading {
+    text-align: center;
+  }
+  #contactForm {
+    form {
+      label {
+        color: $grey;
+      }
+    }
+  }
+}

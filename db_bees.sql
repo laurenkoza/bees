@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.5.5.1
--- http://www.phpmyadmin.net
+-- version 4.6.4
+-- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 07, 2017 at 06:51 PM
--- Server version: 5.7.11
--- PHP Version: 7.0.4
+-- Generation Time: Mar 31, 2017 at 02:30 PM
+-- Server version: 5.7.14
+-- PHP Version: 5.6.25
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -67,7 +67,9 @@ CREATE TABLE `tbl_services` (
   `service_id` smallint(5) UNSIGNED NOT NULL,
   `service_name` varchar(140) NOT NULL,
   `service_price` varchar(150) NOT NULL,
+  `service_visits` varchar(100) NOT NULL,
   `service_desc` text NOT NULL,
+  `service_benefit` text NOT NULL,
   `services_photo` varchar(150) NOT NULL,
   `services_thumb` varchar(153) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
@@ -76,9 +78,9 @@ CREATE TABLE `tbl_services` (
 -- Dumping data for table `tbl_services`
 --
 
-INSERT INTO `tbl_services` (`service_id`, `service_name`, `service_price`, `service_desc`, `services_photo`, `services_thumb`) VALUES
-(1, 'Rookie Bee Rental', '$50.00/Mo. Based upon 12 months', 'Hives are delivered to you in Spring & removed in the fall.  During the season a master bee keeper  visits your yard 6-7 times providing, not only “a Bee’s –eye- view” into the hive but the Safety gear for you so the whole family can partake!', 'rookie.jpg', 'rookie_th.jpg'),
-(2, 'Bee Guardian', '$50.00/Mo. Based upon 12 months', 'Bee Guardian program can be a monthly rental or permanent placement of a hive.    \r\nThis is for the more hands on bee keeper, or one who knows they want hive(s); but still need a little help along the way.\r\n3 visits with a Master Bee Keeper.\r\nInstallation, Summer check up & includes custom harvest & winter preparations\r\n', 'guardian.jpg', 'guardian_th.jpg');
+INSERT INTO `tbl_services` (`service_id`, `service_name`, `service_price`, `service_visits`, `service_desc`, `service_benefit`, `services_photo`, `services_thumb`) VALUES
+(1, 'The "Rookie Bee"', '$65.00/Mo. Based upon 12 months for 1 hive. Add a hive for $30.', '6 Visits included.', 'Hives are delivered to you in Spring & removed in the fall.  During the season a master bee keeper  visits your yard 6 times providing, not only “a Bee’s –eye- view” into the hive but the Safety gear for you so the whole family can partake!', '40lbs Honey Guaranteed \nJoin in extraction \n1lb of wax', 'beekeeper.svg', 'rookie_th.jpg'),
+(2, 'The "Bee Guardian"', '$50.00/Mo. Based upon 12 months for 1 hive. Add a hive for $30.', '4 Visits included', 'Bee Guardian program can be a monthly rental or permanent placement of a hive.    \nThis is for the more hands on bee keeper, or one who knows they want hive(s); but still need a little help along the way.\n4 visits with a Master Bee Keeper. Services include installation, Summer check up, fall harvest (up to 5 hives) & winter preparations.\n', 'Your own honey, harvested and returned. Summer "treatment" Fall "treatment" Wrap', 'beekeeper2.svg', 'guardian_th.jpg');
 
 --
 -- Indexes for dumped tables
