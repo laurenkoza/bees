@@ -65,6 +65,10 @@ Route::controller('shop', 'ShopController');
 
 Route::post('/test', 'LoginController@testing');
 
+Route::get('logout', 'LoginConteoller@logout');
+
+Route::post('/register', 'AuthController@create');
+
 Route::post('cms/servicesUpdate', 'CmsController@updateServices');
 
 Route::get('cms/addservice', 'CmsController@addService');
@@ -76,5 +80,7 @@ Route::get('/cms/{serviceid}', 'CmsController@getIndex');
 Route::controller('/', 'HomeController');
 
 Route::controller('login', 'HomeController');
+
+Route::controller('register', 'HomeController');
 
 Route::auth();
