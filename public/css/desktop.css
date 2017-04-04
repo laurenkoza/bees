@@ -140,6 +140,15 @@
     padding-top: 2.1875em;
     padding-bottom: 2.1875em; }
     html body footer #copyright {
-      font-size: 0.8125em; } }
+      font-size: 0.8125em; }
+  html body .mainContent .serviceSelection {
+    width: 60%;
+    margin: 0 auto; }
+    html body .mainContent .serviceSelection li {
+      display: inline-block;
+      width: 32%;
+      text-align: center; }
+      html body .mainContent .serviceSelection li a {
+        color: #f6c421; } }
 
 /*# sourceMappingURL=desktop.css.map */

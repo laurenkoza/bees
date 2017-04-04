@@ -29,9 +29,11 @@ class CmsController extends Controller
       $user = Auth::user();
       $email = $user->email;
       $password = $user->password;
+      $lists = DB::table('tbl_services')->get(['service_id','service_name']);
+      // dd($lists);
       $autoFill = DB::table('tbl_services')->where('service_id',$serviceid)->get();
       // dd($autoFill);
-      return view('cms', ['email'=>$email, 'password'=>$password, 'title'=>'CMS','autoFill'=>$autoFill,'serviceid'=>$serviceid]);
+      return view('cms', ['email'=>$email, 'password'=>$password, 'title'=>'CMS','autoFill'=>$autoFill,'serviceid'=>$serviceid,'lists'=>$lists]);
      }
 
      public function updateServices()

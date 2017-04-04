@@ -38,7 +38,7 @@ $grey: #5c5b5c;
         }
       }
       .subLayer {
-        
+
       }
       //layer that fades in as you scroll
       #color {
@@ -297,6 +297,24 @@ $grey: #5c5b5c;
         }
       }
     }
+
+    ///////////////////////////////////
+    //CMS
+    ///////////////////////////////////
+      .mainContent {
+        .serviceSelection {
+          width: 60%;
+          margin: 0 auto;
+          li {
+            display: inline-block;
+            width: 32%;
+            text-align: center;
+            a {
+              color: $yellow;
+            }
+          }
+        }
+      }
     }//body
   }
 }//media query closer

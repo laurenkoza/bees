@@ -14,10 +14,14 @@
   <section class="mainContent">
 
   <h2 class="cmsHeading">CONTENT MANAGMENT</h2>
-  <a href="http://localhost/bees/public/cms/1">Rookie Bee</a> <br>
-  <a href="http://localhost/bees/public/cms/2">Bee Guardian</a> <br>
-  <a href="http://localhost/bees/public/cms/3">testing</a>
 
+
+
+  <ul class="serviceSelection">
+    @foreach ($lists as $list)
+    <li><a href="http://localhost/bees/public/cms/{{$list->service_id}}">{{$list->service_name}}</a></li>
+    @endforeach
+  </ul>
   <div id="contactForm">
     <form class="column small-12 large-8 large-centered" action="servicesUpdate" method="post">
       {{ csrf_field() }}
