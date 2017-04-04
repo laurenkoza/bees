@@ -42,7 +42,7 @@ class LoginController extends Controller
     $password = request()->input('password');
     if(Auth::attempt(['email'=>$email, 'password'=>$password])){
       // dd(Auth::user());
-      return redirect('cms');
+      return redirect('cms/1');
     }else{
       return redirect('login');
     }

@@ -24,29 +24,35 @@ class CmsController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-     public function getIndex()
+     public function getIndex($serviceid)
      {
       $user = Auth::user();
       $email = $user->email;
       $password = $user->password;
-      return view('cms', ['email'=>$email, 'password'=>$password, 'title'=>'CMS']);
+      $autoFill = DB::table('tbl_services')->where('service_id',$serviceid)->get();
+      // dd($autoFill);
+      return view('cms', ['email'=>$email, 'password'=>$password, 'title'=>'CMS','autoFill'=>$autoFill,'serviceid'=>$serviceid]);
      }
 
      public function updateServices()
      {
-       $serviceName = request()->input('serviceName');
-       $servicePrice = request()->input('servicePrice');
-       $serviceVisits = request()->input('serviceVisits');
-       $serviceDesc = request()->input('serviceDesc');
-       $serviceBenefits = request()->input('serviceBenefits');
+       $array = [
+         'service_id' => request()->input('serviceId'),
+         'serviceName' => request()->input('serviceName'),
+         'servicePrice' => request()->input('servicePrice'),
+         'serviceVisits' => request()->input('serviceVisits'),
+         'serviceDesc' => request()->input('serviceDesc'),
+         'serviceBenefit' => request()->input('serviceBenefit')
+       ];
 
-       DB::table('tbl_services')->where('service_id',3)->update([
-         'service_name'=>$serviceName,
-         'service_price'=>$servicePrice,
-         'service_visits'=>$serviceVisits,
-         'service_desc'=>$serviceDesc,
-         'service_benefit'=>$serviceBenefits
+       DB::table('tbl_services')->where('service_id',$array['service_id'])->update([
+         'service_name'=>$array['serviceName'],
+         'service_price'=>$array['servicePrice'],
+         'service_visits'=>$array['serviceVisits'],
+         'service_desc'=>$array['serviceDesc'],
+         'service_benefit'=>$array['serviceBenefit']
        ]);
       //  dd($dump);
+      return redirect('cms/'.$array['service_id']);
      }
 }

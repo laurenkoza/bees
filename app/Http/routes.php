@@ -64,8 +64,10 @@ Route::controller('services', 'ServicesController');
 Route::controller('shop', 'ShopController');
 
 Route::post('/test', 'LoginController@testing');
-Route::post('/servicesUpdate', 'CmsController@updateServices');
-Route::controller('cms', 'CmsController');
+
+Route::post('cms/servicesUpdate', 'CmsController@updateServices');
+
+Route::get('/cms/{serviceid}', 'CmsController@getIndex');
 
 Route::controller('/', 'HomeController');
 
