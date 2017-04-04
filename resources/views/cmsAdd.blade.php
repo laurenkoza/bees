@@ -18,29 +18,26 @@
 
 
   <ul class="serviceSelection">
-    @foreach ($lists as $list)
-    <li><a href="http://localhost/bees/public/cms/{{$list->service_id}}">{{$list->service_name}}</a></li>
-    @endforeach
-    <li><a href="addservice">Add New</a></li>
+    <li><a href="1">Edit Existing</a></li>
+    <li><a href="addService">Add New</a></li>
   </ul>
   <div id="contactForm">
     <form class="column small-12 large-8 large-centered" action="{{$option}}" method="post">
       {{ csrf_field() }}
-      <input type="text" name="serviceId" value="{{$serviceid}}">
       <label for="serviceName">Serivce Name</label>
-      <input type="text" name="serviceName" value="{{$autoFill[0]->service_name}}">
+      <input type="text" name="serviceName" value="">
 
       <label for="servicePrice">Service Price</label>
-      <textarea name="servicePrice" rows="8" cols="80">{{$autoFill[0]->service_price}}</textarea>
+      <textarea name="servicePrice" rows="8" cols="80"></textarea>
 
       <label for="serviceVisits">Service Visits</label>
-      <textarea name="serviceVisits" rows="8" cols="80">{{$autoFill[0]->service_visits}}</textarea>
+      <textarea name="serviceVisits" rows="8" cols="80"></textarea>
 
       <label for="serviceDesc">Service Description</label>
-      <textarea name="serviceDesc" rows="8" cols="80">{{$autoFill[0]->service_desc}}</textarea>
+      <textarea name="serviceDesc" rows="8" cols="80"></textarea>
 
       <label for="serviceBenefit">Service Benefits</label>
-      <textarea name="serviceBenefit" rows="8" cols="80">{{$autoFill[0]->service_benefit}}</textarea>
+      <textarea name="serviceBenefit" rows="8" cols="80"></textarea>
 
       <input id="submit" type="submit">
     </form>

@@ -67,6 +67,10 @@ Route::post('/test', 'LoginController@testing');
 
 Route::post('cms/servicesUpdate', 'CmsController@updateServices');
 
+Route::get('cms/addservice', 'CmsController@addService');
+
+Route::post('cms/submitnewservice', 'CmsController@submitNewService');
+
 Route::get('/cms/{serviceid}', 'CmsController@getIndex');
 
 Route::controller('/', 'HomeController');
