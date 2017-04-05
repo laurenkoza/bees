@@ -307,19 +307,22 @@ footer {
   font-weight: 700;
   padding: 5px 5px; }
 
-.mainContent .dots {
-  overflow: hidden;
+.mainContent #infobee {
+  display: block;
+  max-width: 100%; }
+.mainContent #info-btns {
+  display: inline-block;
+  text-align: center;
+  width: 100%;
   margin: 20px auto; }
-  .mainContent .dots .dot {
-    width: 15%;
-    height: 40px;
-    display: block;
-    float: left;
-    border: solid 2px #f6c421;
+  .mainContent #info-btns .bee-btn {
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    border: solid 5px #f6c421;
     border-radius: 100%;
-    margin-left: 5%;
-    margin-right: 5%; }
-    .mainContent .dots .dot:first-child {
+    margin: 0 2px; }
+    .mainContent #info-btns .bee-btn:first-child {
       background-color: #f6c421; }
 .mainContent #callToAction {
   background-image: url("../img/home/homebg1.jpg");
