@@ -5,17 +5,20 @@
     <h2 class="hide"><?php echo $title;?></h2>
     <div class="row">
       <div id="infographic" class="column small-10 large-8 small-centered">
-        <img src="img/learn/infographic_holder.svg" alt="Bee infographic">
-        <div class="dots column small-10 large-8 small-centered"><!--filler for now just to how-->
-          <div class="dot"></div>
-          <div class="dot"></div>
-          <div class="dot"></div>
-          <div class="dot"></div>
+        <div>
+          <object id="infobee" data="img/learn/bee-ig.svg"></object>
+        </div>
+        <div id="info-btns" class="column small-10 large-8 small-centered"><!--filler for now just to how-->
+          <div id="btn1" class="bee-btn"><a></a></div>
+          <div id="btn2" class="bee-btn"><a></a></div>
+          <div id="btn3" class="bee-btn"><a></a></div>
+          <div id="btn4" class="bee-btn"><a></a></div>
+          <div id="btn5" class="bee-btn"><a></a></div>
         </div>
       </div>
     </div>
     <div class="row">
-      <div id="fact" class="column large-8 small-10 small-centered">
+      <div id="infoText" class="column large-8 small-10 small-centered">
         <h2 class="infoHeading">What Are Honey Bees?</h2>
         <p class="sideBorder">Honeybees (Apis mellifera) are social insects that vary in colour, usually from a yellow-brown to a dark brown, depending on the type. They are about 12.5 mm long with a hairy body. Honeybees feed on flower nectar and also collect pollen to feed their larvae.</p>
       </div>

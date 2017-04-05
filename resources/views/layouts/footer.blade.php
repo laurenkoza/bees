@@ -17,5 +17,7 @@
     <script src="js/main.js"></script>
     <script src="js/parallax.js"></script>
     <script src="js/nav.js"></script>
+    <script src="js/infograph-animation.js"></script>
+   
   </body>
 </html>

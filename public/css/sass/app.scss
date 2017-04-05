@@ -558,21 +558,22 @@ footer {
 //LEARN PAGE
 ///////////////////////////////////////////////////////
 .mainContent {
-  //filler dot images just so we have something there when we display this at RID
-  .dots {
-    overflow: hidden;
+  #infobee {
+    display: block;
+    max-width: 100%;
+  }
+  #info-btns {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
     margin: 20px auto;
-    .dot {
-      width: 15%;
-      height: 40px;
-      display: block;
-      float: left;
-      border: solid 2px $yellow;
+    .bee-btn {
+      width: 30px;
+      height: 30px;
+      display: inline-block;
+      border: solid 5px $yellow;
       border-radius: 100%;
-      margin: {
-        left: 5%;
-        right: 5%;
-      }
+      margin: 0 2px;
       &:first-child {
         background-color: $yellow;
       }
