@@ -625,7 +625,13 @@ footer {
   .cmsHeading {
     text-align: center;
   }
-
+  .serviceSelection {
+      li {
+        a {
+          color: $yellow;
+        }
+      }
+  }
   #contactForm {
     form {
       label {

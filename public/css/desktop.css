@@ -151,13 +151,7 @@
     html body .mainContent .serviceSelection li {
       display: inline-block;
       width: 32%;
-<<<<<<< HEAD
       text-align: center;
-      margin-bottom: 10px; }
-=======
-      text-align: center; }
->>>>>>> dev.lauren.bees
-      html body .mainContent .serviceSelection li a {
-        color: #f6c421; } }
+      margin-bottom: 10px; } }
 
 /*# sourceMappingURL=desktop.css.map */

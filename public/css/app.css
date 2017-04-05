@@ -349,6 +349,8 @@ footer {
 
 .mainContent .cmsHeading {
   text-align: center; }
+.mainContent .serviceSelection li a {
+  color: #f6c421; }
 .mainContent #contactForm form label {
   color: #5c5b5c; }
 
