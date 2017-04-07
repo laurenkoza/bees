@@ -2,7 +2,6 @@
   <header id="{{$headerImg}}" class="expanded row">
     <div class="layer" data-depth="-0.15"><img src="img/splashImg/{{$headerImg}}.jpg" class="parallaxImg" alt=""></div>
     <div class="layer hex" data-depth="0.20"><!-- parallax layer --></div>
-    <div class="layer" data-depth="0.80"><!-- parallax layer --></div>
     <div id="color" class="layer" data-depth="0.001"><!-- parallax layer color fade in --></div>
 
     <div id="navRow" class="row navRow">

@@ -2,7 +2,6 @@
   <header id="{{$headerImg}}" class="expanded row">
     <div class="layer" data-depth="-0.15"><img src="img/splashImg/{{$headerImg}}.jpg" class="parallaxImg" alt=""></div>
     <div class="layer hex" data-depth="0.20"><!-- parallax layer --></div>
-    <div class="layer" data-depth="0.80"><!-- parallax layer --></div>
     <div id="color" class="layer" data-depth="0.001"><!-- parallax layer color fade in --></div>
 
     <div id="navRow" class="row navRow">
@@ -33,20 +32,20 @@
         </ul>
       </nav>
     </div>
-    <div id="splashContent" class="layer" data-depth="1.50">
+    <div id="splashContent">
       <div class="row">
-        <div id="logo" class="column small-12 small-centered">
+        <div id="logo" class="column small-12 small-centered subLayer" data-depth="0.5">
           <a href="index"><img src="img/icons/logo.svg" alt="Heff's Hives Logo"></a>
           <div class="divider"></div>
           <div class="row">
-            <div id="logoText" class="column small-12 small-centered">
+            <div id="logoText" class="column small-12 small-centered subLayer" data-depth="0.6">
               <h2><?php echo $header;?></h2>
             </div>
           </div>
         </div>
       </div>
       <div class="row">
-        <div id="socialIcons" class="column small-5 medium-4 large-2 small-centered">
+        <div id="socialIcons" class="column small-5 medium-4 large-2 small-centered subLayer" data-depth="0.8">
           <ul>
             <li><a href="https://www.facebook.com/HeffsHoney/" target="_blank"><img src="img/icons/twitter.svg" alt="Twitter"></a></li>
             <li><a href="https://www.facebook.com/HeffsHoney/" target="_blank"><img src="img/icons/facebook.svg" alt="Facebook"></a></li>
@@ -55,7 +54,7 @@
         </div>
       </div>
       <div class="row">
-        <div id="scrollArrow" class="column small-5 large-2 small-centered">
+        <div id="scrollArrow" class="column small-5 large-2 small-centered subLayer" data-depth="0.9">
           <img id="chevron" src="img/icons/scroll.svg" alt="Chevron">
         </div>
       </div>

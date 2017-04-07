@@ -8,6 +8,7 @@ $bodyFonts: 'Open Sans', sans-serif;
 //colors
 $yellow: #f6c421;
 $grey: #5c5b5c;
+$green: #648036;
 
 body {
   color: $grey;
@@ -56,6 +57,33 @@ p,a,li {
 .mainContent {
   padding: {
     top: 6.25em;//100/16
+  }
+}
+#storyBG {
+  padding: {
+    top: 2.8125em;//45/16
+    bottom: 2.8125em;//45/16
+  }
+}
+
+#beeBG {
+  padding: {
+    top: 2.8125em;//45/16
+    bottom: 2.8125em;//45/16
+  }
+}
+
+#callToActionBG {
+  padding: {
+    top: 30px;
+    bottom: 15px;
+  }
+}
+
+#boutiqueBG {
+  padding: {
+    top: 2.8125em;//45/16
+    bottom: 2.8125em;//45/16
   }
 }
 header {
@@ -294,10 +322,6 @@ header {
     }
   }
   .infoBlock {
-    padding: {
-      top: 2.8125em;//45/16
-      bottom: 2.8125em;//45/16
-    }
     p, h3 {
       color: #fff;
       font: {
@@ -313,21 +337,19 @@ header {
     }
   }
   #story {
-    background-image: url('../img/home/homebg2.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: right;
+    background-color: $green;
   }
   #mission {
+    padding: {
+      top: 50px;
+      bottom: 50px;
+    }
     p {
       color: $grey;
     }
   }
   #beeGuardian {
-    background-image: url('../img/home/homebg1.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: right;
+    background-color: $green;
   }
   .infoHeading {
     text-transform: uppercase;
@@ -506,7 +528,7 @@ footer {
     }
   }
   #boutique {
-    background-image: url('../img/home/homebg2.jpg');
+    background-color: $green;
     background-size: cover;
     background-repeat: no-repeat;
     li {
@@ -570,14 +592,10 @@ footer {
     }
   }
   #callToAction {
-    background-image: url('../img/home/homebg1.jpg');
+    background-color: $green;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: bottom center;
-    padding: {
-      top: 30px;
-      bottom: 15px;
-    }
     margin: {
       top: 50px;
       bottom: 50px;
@@ -600,7 +618,7 @@ footer {
   .hideText {
     display: none;
   }
-  #blog {
+  #fact {
     margin: {
       top: 30px;
       bottom: 100px;
@@ -625,7 +643,7 @@ footer {
   #contactForm {
     form {
       label {
-        color: $grey;
+        // color: $grey;
       }
     }
     .cmsSubmit {

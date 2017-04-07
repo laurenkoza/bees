@@ -33,6 +33,22 @@ p, a, li {
 .mainContent {
   padding-top: 6.25em; }
 
+#storyBG {
+  padding-top: 2.8125em;
+  padding-bottom: 2.8125em; }
+
+#beeBG {
+  padding-top: 2.8125em;
+  padding-bottom: 2.8125em; }
+
+#callToActionBG {
+  padding-top: 30px;
+  padding-bottom: 15px; }
+
+#boutiqueBG {
+  padding-top: 2.8125em;
+  padding-bottom: 2.8125em; }
+
 header {
   /* Set a specific height */
   height: 100vh;
@@ -169,27 +185,21 @@ header {
         line-height: 1.35em;
         font-family: "Open Sans", sans-serif;
         font-size: 1.25em; }
-  .mainContent .infoBlock {
-    padding-top: 2.8125em;
-    padding-bottom: 2.8125em; }
-    .mainContent .infoBlock p, .mainContent .infoBlock h3 {
-      color: #fff;
-      font-size: 1em; }
+  .mainContent .infoBlock p, .mainContent .infoBlock h3 {
+    color: #fff;
+    font-size: 1em; }
   .mainContent h3 {
     text-transform: uppercase;
     font-weight: 700; }
   .mainContent #story {
-    background-image: url("../img/home/homebg2.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: right; }
-  .mainContent #mission p {
-    color: #5c5b5c; }
+    background-color: #648036; }
+  .mainContent #mission {
+    padding-top: 50px;
+    padding-bottom: 50px; }
+    .mainContent #mission p {
+      color: #5c5b5c; }
   .mainContent #beeGuardian {
-    background-image: url("../img/home/homebg1.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: right; }
+    background-color: #648036; }
   .mainContent .infoHeading {
     text-transform: uppercase;
     color: #f6c421;
@@ -286,7 +296,7 @@ footer {
   .mainContent #services .service .add {
     font-weight: 700; }
 .mainContent #boutique {
-  background-image: url("../img/home/homebg2.jpg");
+  background-color: #648036;
   background-size: cover;
   background-repeat: no-repeat; }
   .mainContent #boutique li {
@@ -325,12 +335,10 @@ footer {
     .mainContent #info-btns .bee-btn:first-child {
       background-color: #f6c421; }
 .mainContent #callToAction {
-  background-image: url("../img/home/homebg1.jpg");
+  background-color: #648036;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: bottom center;
-  padding-top: 30px;
-  padding-bottom: 15px;
   margin-top: 50px;
   margin-bottom: 50px; }
   .mainContent #callToAction p {
@@ -343,7 +351,7 @@ footer {
     font-weight: 700; }
 .mainContent .hideText {
   display: none; }
-.mainContent #blog {
+.mainContent #fact {
   margin-top: 30px;
   margin-bottom: 100px; }
 
@@ -351,8 +359,6 @@ footer {
   text-align: center; }
 .mainContent .serviceSelection li a {
   color: #f6c421; }
-.mainContent #contactForm form label {
-  color: #5c5b5c; }
 .mainContent #contactForm .cmsSubmit {
   margin-left: 0 !important;
   margin-right: 0 !important; }

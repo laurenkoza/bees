@@ -1,6 +1,19 @@
 @media screen and (min-width: 1200px) {
   html body #homeHeader, html body #learnHeader, html body #servicesHeader, html body #shopHeader, html body #contactHeader {
     background-image: none; }
+  html body .transparentBG {
+    background-size: cover;
+    background-repeat: no-repeat; }
+  html body #storyBG {
+    background-image: url("../img/home/beeHero.png");
+    padding-top: 50px; }
+  html body #beeBG {
+    background-image: url("../img/home/servicesHero.png");
+    padding-top: 50px; }
+  html body #callToActionBG {
+    background-image: url("../img/home/servicesHero.png"); }
+  html body #boutiqueBG {
+    background-image: url("../img/home/beeHero.png"); }
   html body header {
     height: 100vh;
     position: relative; }
@@ -18,6 +31,8 @@
       width: 100%;
       position: relative;
       bottom: 20%; }
+  html body .imgBG {
+    background: url("../img/home/beeHero.png"); }
   html body #color {
     opacity: 0;
     background-color: #f6c421; }

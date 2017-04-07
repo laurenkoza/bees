@@ -28,12 +28,14 @@
   </section>
 
   <section id="story" class=" expanded row infoBlock">
-    <div class="row">
-      <div class="column large-7 large-offset-4 small-10 small-centered">
-        <h2 class="infoHeading">OUR STORY</h2>
-        <div class="sideBorder">
-          <p>Hi, my name is Dan.  I have always liked nature and as an avid outdoors person I had been aware of the issues facing the Bees and moreover all pollinators, but I wasn't doing anything about it.  One day my daughter came to me and stated, "Dad you must do something to help the bees."  This is my eﬀort...it started with two hives and quickly grew to living with sometiemes in excess of two million bees right in my back yard. <span class="break">The last few years I have immersed myself into everything “bee” and found out all kinds about the bees, nature and myself along the way... What I have learned here and the problems I have encountered along the way have led to – Heﬀs Hives-A full service honey house, beekeeping equipment supply and one of the most fun aspects…. local contract beekeeping</span></p>
-      </div>
+    <div id="storyBG" class="transparentBG">
+      <div class="row">
+        <div class="column large-7 large-offset-4 small-10 small-centered">
+          <h2 class="infoHeading">OUR STORY</h2>
+          <div class="sideBorder">
+            <p>Hi, my name is Dan.  I have always liked nature and as an avid outdoors person I had been aware of the issues facing the Bees and moreover all pollinators, but I wasn't doing anything about it.  One day my daughter came to me and stated, "Dad you must do something to help the bees."  This is my eﬀort...it started with two hives and quickly grew to living with sometiemes in excess of two million bees right in my back yard. <span class="break">The last few years I have immersed myself into everything “bee” and found out all kinds about the bees, nature and myself along the way... What I have learned here and the problems I have encountered along the way have led to – Heﬀs Hives-A full service honey house, beekeeping equipment supply and one of the most fun aspects…. local contract beekeeping</span></p>
+        </div>
+        </div>
       </div>
     </div>
   </section>
@@ -48,6 +50,7 @@
   </section>
 
   <section id="beeGuardian" class="expanded row infoBlock">
+    <div id="beeBG" class="transparentBG">
     <div class="column large-7 large-offset-4 small-10 small-centered">
       <h2 class="infoHeading">THE BEES</h2>
       <div class="sideBorder">
@@ -61,6 +64,7 @@
         </p>
       </div>
     </div>
+  </div>
   </section>
 </section>
  @include('layouts.footer')

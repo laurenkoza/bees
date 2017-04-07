@@ -7,7 +7,7 @@ function initMap() {
           center: latLong,
           zoom: 14,
           styles: [
-            {elementType: 'geometry', stylers: [{color: '#c7c5c6'}]},
+            {elementType: 'geometry', stylers: [{color: '#648038'}]},
             {elementType: 'labels.text.stroke', stylers: [{color: '#242f3e'}]},
             {elementType: 'labels.text.fill', stylers: [{color: '#5c5b5c'}]},
             {
@@ -23,7 +23,7 @@ function initMap() {
             {
               featureType: 'poi.park',
               elementType: 'geometry',
-              stylers: [{color: '#263c3f'}]
+              stylers: [{color: '#648038'}]
             },
             {
               featureType: 'poi.park',
@@ -33,7 +33,7 @@ function initMap() {
             {
               featureType: 'road',
               elementType: 'geometry',
-              stylers: [{color: '#5c5b5c'}]
+              stylers: [{color: '#cccccc'}]
             },
             {
               featureType: 'road',
@@ -73,7 +73,7 @@ function initMap() {
             {
               featureType: 'water',
               elementType: 'geometry',
-              stylers: [{color: '#17263c'}]
+              stylers: [{color: '#555555'}]
             },
             {
               featureType: 'water',
