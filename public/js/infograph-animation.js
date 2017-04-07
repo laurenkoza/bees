@@ -82,6 +82,8 @@
 		var lwing23 = animate.querySelector('#l-wing_21_');
 		var rwing23 = animate.querySelector('#r-wing_21_');
 
+		var apple = animate.querySelector('#apple');
+
 		//SVG BEES - Info 3
 		var bee31 = animate.querySelector('#bee3-1');
 		var lwing31 = animate.querySelector('#l-wing_5_');
@@ -254,6 +256,17 @@
 			tl6.add( TweenLite.to(bee23, 3.5, {x: 0, y:0, ease:Linear.easeNone}) );
 			tl6.add( TweenLite.to(bee23, .6, {rotation: 0, transformOrigin: "50% 50%", ease:Linear.easeNone}) );
 
+		//Apple Growing Animation
+		var tl10 = new TimelineMax({repeat:-1});
+			tl10.add( TweenLite.to(apple, 0, {scale:0.7, transformOrigin: "53% 5%" }) );
+			tl10.add( TweenLite.to(apple, 4, {scale:1, transformOrigin: "53% 5%" }) );
+			tl10.add( TweenLite.to(apple, 1, {rotation:2, transformOrigin: "53% 5%"}), '-=4' );
+			tl10.add( TweenLite.to(apple, 1, {rotation:-2, transformOrigin: "53% 5%"}), '-=3' );
+			tl10.add( TweenLite.to(apple, 1, {rotation:6, transformOrigin: "53% 5%"}), '-=2' );
+			tl10.add( TweenLite.to(apple, 1, {rotation:-6, transformOrigin: "53% 5%"}), '-=1' );
+			tl10.add( TweenLite.to(apple, 1, {y:150, rotation:10, transformOrigin: "53% 5%", ease:Linear.easeNone }) );
+
+
 		//--- INFO 3 ---//
 		//Bee  Dying Animation
 		var tl7 = new TimelineMax({repeat:-1});
@@ -262,22 +275,21 @@
 			tl7.add( TweenLite.to(bee33, .5, {opacity: 0}) );
 			tl7.add( TweenLite.to(bee32, .5, {opacity: 1}), '-=0.5' );
 			tl7.add( TweenLite.to(bee32, 2, {x: -79, y:52, ease:Linear.easeNone}) );
-			tl7.add( TweenLite.to(bee32, .5, {opacity: 0}) );
-			tl7.add( TweenLite.to(bee31, .5, {opacity: 1}), '-=0.5' );
-			tl7.add( TweenLite.to(bee31, .5, {x: -5, y:15, rotation: -15, ease:Linear.easeNone}) );
-			tl7.add( TweenLite.to(bee31, .5, {x: -5, y:15, rotation: -15, ease:Linear.easeNone}) );
+			tl7.add( TweenLite.to(bee32, .4, {opacity: 0}) );
+			tl7.add( TweenLite.to(bee31, .4, {opacity: 1}), '-=0.5' );
+			tl7.add( TweenLite.to(bee31, 1.2, {x: -5, y:15, rotation: -15, ease:Linear.easeNone, opacity:0}) );
 
 		//Spraycan Animation
-		var tl7 = new TimelineMax({repeat:-1});
-			tl7.add( TweenLite.to(spray, 0, {opacity:0}));
-			tl7.add( TweenLite.to(nozzle, 2.5, {y:4}));
-			tl7.add( TweenLite.to(spray, 1.25, {opacity:1}), '-=2.5');
-			tl7.add( TweenLite.to(spray, 1.25, {x: 20, y: 5, opacity:0}), '-=1.25');
-			tl7.add( TweenLite.to(nozzle, .5, {y:0}));
 		var tl8 = new TimelineMax({repeat:-1});
-			tl8.add( TweenLite.to(spraycan, 5, {rotation:30, transformOrigin: "30% 30%",  ease:Linear.easeNone}));
-			tl8.add( TweenLite.to(spraycan, .5, {rotation:30, transformOrigin: "30% 30%",  ease:Linear.easeNone}));
-			tl8.add( TweenLite.to(spraycan, .5, {rotation:0, transformOrigin: "30% 30%",  ease:Linear.easeNone}));
+			tl8.add( TweenLite.to(spray, 0, {opacity:0}));
+			tl8.add( TweenLite.to(nozzle, 2.5, {y:4}));
+			tl8.add( TweenLite.to(spray, 1.25, {opacity:1}), '-=2.5');
+			tl8.add( TweenLite.to(spray, 1.25, {x: 20, y: 5, opacity:0}), '-=1.25');
+			tl8.add( TweenLite.to(nozzle, .5, {y:0}));
+		var tl9 = new TimelineMax({repeat:-1});
+			tl9.add( TweenLite.to(spraycan, 5, {rotation:30, transformOrigin: "30% 30%",  ease:Linear.easeNone}));
+			tl9.add( TweenLite.to(spraycan, .5, {rotation:30, transformOrigin: "30% 30%",  ease:Linear.easeNone}));
+			tl9.add( TweenLite.to(spraycan, .5, {rotation:0, transformOrigin: "30% 30%",  ease:Linear.easeNone}));
 
 
 		//Buttons
