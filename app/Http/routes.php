@@ -77,6 +77,14 @@ Route::post('cms/submitnewservice', 'CmsController@submitNewService');
 
 Route::get('/cms/{serviceid}', 'CmsController@getIndex');
 
+Route::get('cmsshop/addproduct', 'CmsController@addShop');
+
+Route::get('cmsshop/{productid}', 'CmsController@showShop');
+
+Route::post('cmsshop/submitnewshop', 'CmsController@submitNewShop');
+
+Route::post('cmsshop/productUpdate', 'CmsController@updateShop');
+
 Route::controller('/', 'HomeController');
 
 Route::controller('login', 'HomeController');
