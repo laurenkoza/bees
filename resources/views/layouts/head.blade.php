@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="{{URL::asset('css/foundation.css')}}">
     <link rel="stylesheet" href="{{URL::asset('css/app.css')}}">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,700,900|Open+Sans:300,300i,400,700" rel="stylesheet">
+    <script src="js/bee-info.js"></script>
   </head>
 
 <body>

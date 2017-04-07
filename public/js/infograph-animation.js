@@ -183,8 +183,7 @@
 		TweenMax.fromTo([body11,body12,body13], .1, {rotation:1.5, transformOrigin: "50% 50%", yoyo: true, repeat: -1, ease:Linear.easeNone},{rotation:-1.5, transformOrigin: "50% 50%", yoyo: true, repeat: -1, ease:Linear.easeNone});
 
 		//----- HAPPY BOUNCE ANIMATION -----//
-		TweenMax.to([keeper,flowers,leaves], .7, {y:4, yoyo: true, repeat: -1, ease:Linear.easeNone});
-
+		TweenMax.to([keeper,flowers,leaves], .7, {y:3, yoyo: true, repeat: -1, ease:Linear.easeNone});
 
 		//----- HEART ANIMATION -----//
 		for (var i=0; i<heart.length; i++){
@@ -271,25 +270,27 @@
 		//Bee  Dying Animation
 		var tl7 = new TimelineMax({repeat:-1});
 			tl7.add( TweenLite.to([bee32,bee31], 0, {opacity: 0}) );
-			tl7.add( TweenLite.to(bee33, 2, {x: -59, y:42, ease:Linear.easeNone}) );
-			tl7.add( TweenLite.to(bee33, .5, {opacity: 0}) );
-			tl7.add( TweenLite.to(bee32, .5, {opacity: 1}), '-=0.5' );
-			tl7.add( TweenLite.to(bee32, 2, {x: -79, y:52, ease:Linear.easeNone}) );
-			tl7.add( TweenLite.to(bee32, .4, {opacity: 0}) );
-			tl7.add( TweenLite.to(bee31, .4, {opacity: 1}), '-=0.5' );
-			tl7.add( TweenLite.to(bee31, 1.2, {x: -5, y:15, rotation: -15, ease:Linear.easeNone, opacity:0}) );
+			tl7.add( TweenLite.to(bee33, 1.5, {x: -59, y:42, ease:Linear.easeNone}) );
+			tl7.add( TweenLite.to(bee33, 0, {opacity: 0}) );
+			tl7.add( TweenLite.to(bee32, 0, {opacity: 1}), '-=0' );
+			tl7.add( TweenLite.to(bee32, 2.5, {x: -79, y:52, ease:Linear.easeNone}) );
+			tl7.add( TweenLite.to(bee32, 0, {opacity: 0}) );
+			tl7.add( TweenLite.to(bee31, 0, {opacity: 1}), '-=0' );
+			tl7.add( TweenLite.to(bee31, 2, {x: -5, y:15, rotation: -15, ease:Linear.easeNone, opacity:0}) );
 
 		//Spraycan Animation
 		var tl8 = new TimelineMax({repeat:-1});
 			tl8.add( TweenLite.to(spray, 0, {opacity:0}));
-			tl8.add( TweenLite.to(nozzle, 2.5, {y:4}));
-			tl8.add( TweenLite.to(spray, 1.25, {opacity:1}), '-=2.5');
-			tl8.add( TweenLite.to(spray, 1.25, {x: 20, y: 5, opacity:0}), '-=1.25');
+			tl8.add( TweenLite.to(nozzle, .5, {y:4}));
+			tl8.add( TweenLite.to(spray, 0, {opacity:1}) );
+			tl8.add( TweenLite.to(spray, 2, {x: 40, y: 10, opacity:0, scale: 1.5, ease: SlowMo.ease.config(0.5, 0.5, false)}) );
 			tl8.add( TweenLite.to(nozzle, .5, {y:0}));
 		var tl9 = new TimelineMax({repeat:-1});
-			tl9.add( TweenLite.to(spraycan, 5, {rotation:30, transformOrigin: "30% 30%",  ease:Linear.easeNone}));
-			tl9.add( TweenLite.to(spraycan, .5, {rotation:30, transformOrigin: "30% 30%",  ease:Linear.easeNone}));
-			tl9.add( TweenLite.to(spraycan, .5, {rotation:0, transformOrigin: "30% 30%",  ease:Linear.easeNone}));
+			tl9.add( TweenLite.to(spraycan, 0, {x:30}));
+			tl9.add( TweenLite.to(spraycan, 3, {rotation:25, transformOrigin: "0% 30%", ease: SlowMo.ease.config(0.3, 0.3, false)}));
+			tl9.add( TweenLite.to(spraycan, 2.5, {rotation:38, ease: SlowMo.ease.config(0.8, 0, false)}));
+
+			tl9.add( TweenLite.to(spraycan, .5, {rotation:0,  ease:Linear.ease}));
 
 
 		//Buttons
