@@ -40,6 +40,7 @@
 
 </div>
 <div id="boutique" class="row expanded">
+  <div id="boutiqueBG" class="transparentBG">
   <section class="column small-10 large-8 small-centered infoBlock">
     <h2 class="infoHeading">TECH TRANSFER &amp; BOUTIQUE MEMBERSHIP</h2>
     <div class="sideBorder">
@@ -51,6 +52,7 @@
       </ul>
     </div>
   </section>
+</div>
 </div>
 
 

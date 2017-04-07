@@ -38,13 +38,13 @@
       <label for="productPrice">Product Price</label>
       <textarea name="productPrice" rows="8" cols="80">{{$autoFill[0]->product_price}}</textarea>
 
-      <input id="submit" type="submit">
+      <input id="submit" class="cmsSubmit" type="submit">
     </form>
 
     <form class="column small-12 large-8 large-centered" action="deleteproduct" method="post">
       {{ csrf_field() }}
       <input class="hide" type="text" name="productId" value="{{$productid}}">
-      <input id="submit" class="delete" type="submit" value="DELETE">
+      <input id="submit" class="cmsSubmit delete" type="submit" value="DELETE">
     </form>
   </div>
 </section>

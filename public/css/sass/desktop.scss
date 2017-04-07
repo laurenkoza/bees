@@ -13,6 +13,29 @@ $grey: #5c5b5c;
       #homeHeader, #learnHeader, #servicesHeader, #shopHeader, #contactHeader {
         background-image: none;
       }
+      .transparentBG {
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+      #storyBG {
+        background-image: url('../img/home/beeHero.png');
+        padding: {
+          top: 50px;
+        }
+      }
+      #beeBG {
+        background-image: url('../img/home/servicesHero.png');
+        padding: {
+          top: 50px;
+        }
+      }
+      #callToActionBG {
+        background-image: url('../img/home/servicesHero.png');
+      }
+
+      #boutiqueBG {
+        background-image: url('../img/home/beeHero.png');
+      }
       //parallaxing layers
       //header holds all the layers
       header {
@@ -36,6 +59,9 @@ $grey: #5c5b5c;
           position: relative;
           bottom: 20%;
         }
+      }
+      .imgBG {
+        background: url('../img/home/beeHero.png');
       }
       .subLayer {
 
@@ -263,12 +289,6 @@ $grey: #5c5b5c;
       }
 
       //learn page
-      #callToAction {
-        // padding: {
-        //   top: 15px;
-        //   bottom: 0px;
-        // }
-      }
       .hideText {
         display: block;
       }
