@@ -44,15 +44,14 @@
       <label for="serviceBenefit">Service Benefits</label>
       <textarea name="serviceBenefit" rows="8" cols="80">{{$autoFill[0]->service_benefit}}</textarea>
 
-      <input id="submit" type="submit">
+      <input id="submit" class="cmsSubmit" type="submit">
     </form>
 
     <form class="column small-12 large-8 large-centered" action="deleteservice" method="post">
       {{ csrf_field() }}
       <input class="hide" type="text" name="serviceId" value="{{$serviceid}}">
-      <input id="submit" class="delete" type="submit" value="DELETE">
+      <input id="submit" class="cmsSubmit delete" class="delete" type="submit" value="DELETE">
     </form>
-
 
   </div>
 </section>

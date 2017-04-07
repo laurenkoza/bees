@@ -353,5 +353,12 @@ footer {
   color: #f6c421; }
 .mainContent #contactForm form label {
   color: #5c5b5c; }
+.mainContent #contactForm .cmsSubmit {
+  margin-left: 0 !important;
+  margin-right: 0 !important; }
+.mainContent #contactForm .delete {
+  color: #f00 !important;
+  margin-left: 75% !important;
+  margin-top: -75px; }
 
 /*# sourceMappingURL=app.css.map */
