@@ -85,6 +85,13 @@ class CmsController extends Controller
       return redirect('cms/'.$array['service_id']);
      }
 
+     public function deleteService()
+     {
+       $serviceid = request()->input('serviceId');
+       DB::table('tbl_services')->where('service_id',$serviceid)->delete();
+       return redirect('cms/1');
+     }
+
      public function showShop($productid)
      {
       $lists = DB::table('tbl_products')->get(['product_id','product_name']);
@@ -132,6 +139,13 @@ class CmsController extends Controller
          'product_price' => $array['productPrice']
        ]);
 
+       return redirect('cmsshop/1');
+     }
+
+     public function deleteShop()
+     {
+       $productid = request()->input('productId');
+       DB::table('tbl_products')->where('product_id',$productid)->delete();
        return redirect('cmsshop/1');
      }
 

@@ -28,8 +28,8 @@
   <div id="contactForm">
     <form class="column small-12 large-8 large-centered" action="{{$option}}" method="post">
       {{ csrf_field() }}
-      <input type="text" name="serviceId" value="{{$serviceid}}">
-      <label for="serviceName">Serivce Name</label>
+      <input class="hide" type="text" name="serviceId" value="{{$serviceid}}">
+      <label for="serviceName">Service Name</label>
       <input type="text" name="serviceName" value="{{$autoFill[0]->service_name}}">
 
       <label for="servicePrice">Service Price</label>
@@ -46,6 +46,14 @@
 
       <input id="submit" type="submit">
     </form>
+
+    <form class="column small-12 large-8 large-centered" action="deleteservice" method="post">
+      {{ csrf_field() }}
+      <input class="hide" type="text" name="serviceId" value="{{$serviceid}}">
+      <input id="submit" class="delete" type="submit" value="DELETE">
+    </form>
+
+
   </div>
 </section>
     <script src="js/vendor/jquery.js"></script>
