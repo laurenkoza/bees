@@ -202,16 +202,6 @@ header {
         }
       }
   }
-  //delete later i dont know what this is changeing
-  //pretty sure there is no h1
-  // h1 {
-  //   font-family: $bodyFonts;
-  //   line-height: 1.3em;
-  //   font-size: 2.75em;
-  //   font-weight: 300;
-  //   color: #fff;
-  //   text-align: center;
-  // }
   //social in header
   #socialIcons {
     padding: {
@@ -625,11 +615,30 @@ footer {
   .cmsHeading {
     text-align: center;
   }
-
+  .serviceSelection {
+      li {
+        a {
+          color: $yellow;
+        }
+      }
+  }
   #contactForm {
     form {
       label {
         color: $grey;
+      }
+    }
+    .cmsSubmit {
+      margin: {
+        left: 0 !important;
+        right: 0 !important;
+      }
+    }
+    .delete {
+      color: #f00 !important;
+      margin: {
+        left: 75% !important;
+        top: -75px;
       }
     }
   }

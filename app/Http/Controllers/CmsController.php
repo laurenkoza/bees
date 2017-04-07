@@ -33,13 +33,13 @@ class CmsController extends Controller
       $autoFill = DB::table('tbl_services')->where('service_id',$serviceid)->get();
       // dd($autoFill);
       $option = 'servicesUpdate';
-      return view('cms', ['title'=>'CMS','autoFill'=>$autoFill,'serviceid'=>$serviceid,'lists'=>$lists,'option'=>$option]);
+      return view('cmsServices', ['title'=>'CMS','autoFill'=>$autoFill,'serviceid'=>$serviceid,'lists'=>$lists,'option'=>$option]);
      }
 
      public function addService()
      {
        $option = 'submitnewservice';
-       return view('cmsAdd', ['title'=>'Add Service','option'=>$option]);
+       return view('cmsServicesAdd', ['title'=>'Add Service','option'=>$option]);
      }
 
      public function submitNewService()
@@ -84,4 +84,69 @@ class CmsController extends Controller
       //  dd($dump);
       return redirect('cms/'.$array['service_id']);
      }
+
+     public function deleteService()
+     {
+       $serviceid = request()->input('serviceId');
+       DB::table('tbl_services')->where('service_id',$serviceid)->delete();
+       return redirect('cms/1');
+     }
+
+     public function showShop($productid)
+     {
+      $lists = DB::table('tbl_products')->get(['product_id','product_name']);
+      //  dd($list);
+      $autoFill = DB::table('tbl_products')->where('product_id',$productid)->get();
+      $option = 'productUpdate';
+      return view('cmsShop', ['title'=>'CMS','autoFill'=>$autoFill,'productid'=>$productid,'lists'=>$lists,'option'=>$option]);
+     }
+
+     public function addShop()
+     {
+       $option = 'submitnewshop';
+       return view('cmsShopAdd', ['title'=>'Add Product','option'=>$option]);
+     }
+
+     public function updateShop()
+     {
+       $array = [
+         'product_id' => request()->input('productId'),
+         'productName' => request()->input('productName'),
+         'productDesc' => request()->input('productDesc'),
+         'productPrice' => request()->input('productPrice')
+       ];
+
+       DB::table('tbl_products')->where('product_id',$array['product_id'])->update([
+         'product_name' => $array['productName'],
+         'product_desc' => $array['productDesc'],
+         'product_price' => $array['productPrice']
+       ]);
+
+       return redirect('cmsshop/'.$array['product_id']);
+     }
+
+     public function submitNewShop()
+     {
+       $array = [
+         'productName' => request()->input('productName'),
+         'productDesc' => request()->input('productDesc'),
+         'productPrice' => request()->input('productPrice')
+       ];
+
+       DB::table('tbl_products')->insert([
+         'product_name' => $array['productName'],
+         'product_desc' => $array['productDesc'],
+         'product_price' => $array['productPrice']
+       ]);
+
+       return redirect('cmsshop/1');
+     }
+
+     public function deleteShop()
+     {
+       $productid = request()->input('productId');
+       DB::table('tbl_products')->where('product_id',$productid)->delete();
+       return redirect('cmsshop/1');
+     }
+
 }

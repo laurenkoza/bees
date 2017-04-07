@@ -55,6 +55,8 @@ Route::post('mail', function (){
 //
 //
 /////////////////////////////////////////////
+
+//basic pages
 Route::controller('contact', 'ContactController');
 
 Route::controller('learn', 'LearnController');
@@ -63,12 +65,14 @@ Route::controller('services', 'ServicesController');
 
 Route::controller('shop', 'ShopController');
 
+//login, logout and register function
 Route::post('/test', 'LoginController@testing');
 
 Route::get('logout', 'LoginConteoller@logout');
 
 Route::post('/register', 'AuthController@create');
 
+//cms functions
 Route::post('cms/servicesUpdate', 'CmsController@updateServices');
 
 Route::get('cms/addservice', 'CmsController@addService');
@@ -77,6 +81,19 @@ Route::post('cms/submitnewservice', 'CmsController@submitNewService');
 
 Route::get('/cms/{serviceid}', 'CmsController@getIndex');
 
+Route::get('cmsshop/addproduct', 'CmsController@addShop');
+
+Route::post('cms/deleteservice', 'CmsController@deleteService');
+
+Route::get('cmsshop/{productid}', 'CmsController@showShop');
+
+Route::post('cmsshop/submitnewshop', 'CmsController@submitNewShop');
+
+Route::post('cmsshop/productUpdate', 'CmsController@updateShop');
+
+Route::post('cmsshop/deleteproduct', 'CmsController@deleteShop');
+
+//home page and login and register page displays
 Route::controller('/', 'HomeController');
 
 Route::controller('login', 'HomeController');

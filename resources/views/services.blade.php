@@ -1,3 +1,4 @@
+ @include('layouts.head')
  @include('layouts.header')
  <div id="scrollAnchor"><!--anchor for scroll button--></div>
 <section class="mainContent">
