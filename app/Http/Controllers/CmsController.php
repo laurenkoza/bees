@@ -24,6 +24,8 @@ class CmsController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+
+     // get initial CMS page to edit services
      public function getIndex($serviceid)
      {
       $user = Auth::user();
@@ -36,12 +38,14 @@ class CmsController extends Controller
       return view('cmsServices', ['title'=>'CMS','autoFill'=>$autoFill,'serviceid'=>$serviceid,'lists'=>$lists,'option'=>$option]);
      }
 
+     // get form to submit new service to the database
      public function addService()
      {
        $option = 'submitnewservice';
        return view('cmsServicesAdd', ['title'=>'Add Service','option'=>$option]);
      }
 
+     // POST method to actually add new service
      public function submitNewService()
      {
        $array = [
@@ -60,9 +64,9 @@ class CmsController extends Controller
          'service_benefit'=>$array['serviceBenefit']
        ]);
       return redirect('cms/1');
-
      }
 
+     // POST method to update existing services
      public function updateServices()
      {
        $array = [
@@ -85,6 +89,7 @@ class CmsController extends Controller
       return redirect('cms/'.$array['service_id']);
      }
 
+     // POST route to remove service from database
      public function deleteService()
      {
        $serviceid = request()->input('serviceId');
@@ -92,6 +97,7 @@ class CmsController extends Controller
        return redirect('cms/1');
      }
 
+     // Show form to update products
      public function showShop($productid)
      {
       $lists = DB::table('tbl_products')->get(['product_id','product_name']);
@@ -101,12 +107,14 @@ class CmsController extends Controller
       return view('cmsShop', ['title'=>'CMS','autoFill'=>$autoFill,'productid'=>$productid,'lists'=>$lists,'option'=>$option]);
      }
 
+     // get form to add new product to the database
      public function addShop()
      {
        $option = 'submitnewshop';
        return view('cmsShopAdd', ['title'=>'Add Product','option'=>$option]);
      }
 
+     // POST method to update product info
      public function updateShop()
      {
        $array = [
@@ -125,6 +133,7 @@ class CmsController extends Controller
        return redirect('cmsshop/'.$array['product_id']);
      }
 
+     // POST method to add new product to database
      public function submitNewShop()
      {
        $array = [
@@ -142,6 +151,7 @@ class CmsController extends Controller
        return redirect('cmsshop/1');
      }
 
+     // POST method to delete shop item
      public function deleteShop()
      {
        $productid = request()->input('productId');

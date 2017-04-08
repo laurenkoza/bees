@@ -35,7 +35,7 @@ class LoginController extends Controller
      * @return \Illuminate\Http\Response
      */
 
-  public function testing()
+  public function cmsLogin()
   {
     $name = request()->input('name');
     $email = request()->input('email');

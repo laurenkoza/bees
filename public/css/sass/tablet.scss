@@ -6,7 +6,7 @@ $bodyFonts: 'Open Sans', sans-serif;
 $yellow: #f6c421;
 $grey: #5c5b5c;
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 48em) {//768/16
   body {
     header {
       #stickyLogo {
@@ -27,11 +27,11 @@ $grey: #5c5b5c;
       .barOpen {
         &:first-child {
           transform: rotate(45deg);
-          margin-top: 45px;
+          margin-top: 2.8125em;//45/16
         }
         &:nth-child(2) {
           transform: rotate(-45deg);
-          margin-top: -3px;
+          margin-top: -0.1875em;//-3/16
         }
         &:last-child {
           opacity: 0;
@@ -84,7 +84,7 @@ $grey: #5c5b5c;
         }
         .iconBlock {
           margin: {
-            top: 60px;
+            top: 3.75em;//60/16
           }
           .iconBlockHeading {
             font: {
@@ -107,9 +107,9 @@ $grey: #5c5b5c;
       }
       #info-btns {
         .bee-btn {
-          width: 40px;
-          height: 40px;
-          margin: 0 5px;
+          width: 2.5em;//40/16
+          height: 2.5em;//40/16
+          margin: 0 0.3125em;//5/16
         }
       }
     }
@@ -129,7 +129,7 @@ $grey: #5c5b5c;
       #address {
         .contactHeading {
           padding: {
-            left: 20px;
+            left: 1.25em;//20/16
           }
           font: {
             size: 2.5em;

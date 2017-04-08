@@ -66,7 +66,7 @@ Route::controller('services', 'ServicesController');
 Route::controller('shop', 'ShopController');
 
 //login, logout and register function
-Route::post('/test', 'LoginController@testing');
+Route::post('/cmslogin', 'LoginController@cmsLogin');
 
 Route::get('logout', 'LoginConteoller@logout');
 

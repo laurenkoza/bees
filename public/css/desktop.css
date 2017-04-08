@@ -1,4 +1,4 @@
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 75em) {
   html body #homeHeader, html body #learnHeader, html body #servicesHeader, html body #shopHeader, html body #contactHeader {
     background-image: none; }
   html body .transparentBG {
@@ -6,10 +6,10 @@
     background-repeat: no-repeat; }
   html body #storyBG {
     background-image: url("../img/home/beeHero.png");
-    padding-top: 50px; }
+    padding-top: 3.125em; }
   html body #beeBG {
     background-image: url("../img/home/servicesHero.png");
-    padding-top: 50px; }
+    padding-top: 3.125em; }
   html body #callToActionBG {
     background-image: url("../img/home/servicesHero.png"); }
   html body #boutiqueBG {
@@ -92,10 +92,10 @@
   html body .mainContent .sideBorder {
     border-left: solid 6px #f6c421;
     border-top: none;
-    padding-left: 20px;
+    padding-left: 1.25em;
     padding-top: 0; }
   html body .mainContent ul.sideBorder {
-    padding-left: 40px; }
+    padding-left: 2.5em; }
   html body .mainContent .infoHeading {
     size: 2.1875em; }
   html body .mainContent .service {
@@ -131,12 +131,12 @@
         font-family: "Open Sans", sans-serif;
         font-size: 1.25em; }
   html body .mainContent .mainContent #info-btns .bee-btn {
-    width: 40px;
-    height: 40px;
-    margin: 0 10px; }
+    width: 2.5em;
+    height: 2.5em;
+    margin: 0 0.625em; }
   html body .mainContent .shopItem {
-    margin-top: 40px;
-    margin-bottom: 40px; }
+    margin-top: 2.5em;
+    margin-bottom: 2.5em; }
     html body .mainContent .shopItem .shopPrice {
       text-align: center;
       width: 10%; }
@@ -145,10 +145,10 @@
   html body .mainContent #readMore {
     display: none; }
   html body .mainContent #contactForm form input, html body .mainContent #contactForm form textarea {
-    padding-top: 30px;
-    padding-bottom: 30px;
-    padding-left: 30px;
-    padding-right: 30px; }
+    padding-top: 1.875em;
+    padding-bottom: 1.875em;
+    padding-left: 1.875em;
+    padding-right: 1.875em; }
     html body .mainContent #contactForm form input ::-webkit-input-placeholder, html body .mainContent #contactForm form textarea ::-webkit-input-placeholder {
       text-transform: capitalize; }
   html body .mainContent #contactForm form .paddingFixLeft {
@@ -167,6 +167,6 @@
       display: inline-block;
       width: 32%;
       text-align: center;
-      margin-bottom: 10px; } }
+      margin-bottom: 0.625em; } }
 
 /*# sourceMappingURL=desktop.css.map */

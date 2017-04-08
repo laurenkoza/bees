@@ -1,4 +1,4 @@
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 48em) {
   body header #stickyLogo img {
     width: 65%;
     padding-top: 0.8em;
@@ -9,10 +9,10 @@
     width: 85%; }
   body header .barOpen:first-child {
     transform: rotate(45deg);
-    margin-top: 45px; }
+    margin-top: 2.8125em; }
   body header .barOpen:nth-child(2) {
     transform: rotate(-45deg);
-    margin-top: -3px; }
+    margin-top: -0.1875em; }
   body header .barOpen:last-child {
     opacity: 0; }
   body header #mainNav ul li a {
@@ -27,19 +27,19 @@
   body .mainContent #secondaryNav #navHeading h3, body .mainContent #secondaryNav #navHeading h2, body .mainContent #services #navHeading h3, body .mainContent #services #navHeading h2 {
     font-size: 2.5em; }
   body .mainContent #secondaryNav .iconBlock, body .mainContent #services .iconBlock {
-    margin-top: 60px; }
+    margin-top: 3.75em; }
     body .mainContent #secondaryNav .iconBlock .iconBlockHeading, body .mainContent #services .iconBlock .iconBlockHeading {
       font-size: 2.5em; }
     body .mainContent #secondaryNav .iconBlock .navLinkBody, body .mainContent #services .iconBlock .navLinkBody {
       font-size: 1.75em; }
   body .mainContent #info-btns .bee-btn {
-    width: 40px;
-    height: 40px;
-    margin: 0 5px; }
+    width: 2.5em;
+    height: 2.5em;
+    margin: 0 0.3125em; }
   body .mainContent .shopPrice {
     width: 15%; }
   body .mainContent #address .contactHeading {
-    padding-left: 20px;
+    padding-left: 1.25em;
     font-size: 2.5em; }
   body .mainContent #contactForm form label {
     font-size: 1.3em; } }

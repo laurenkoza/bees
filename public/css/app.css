@@ -42,17 +42,15 @@ p, a, li {
   padding-bottom: 2.8125em; }
 
 #callToActionBG {
-  padding-top: 30px;
-  padding-bottom: 15px; }
+  padding-top: 1.875em;
+  padding-bottom: 0.9375em; }
 
 #boutiqueBG {
   padding-top: 2.8125em;
   padding-bottom: 2.8125em; }
 
 header {
-  /* Set a specific height */
   height: 100vh;
-  /* Create the parallax scrolling effect */
   background-repeat: repeat-y;
   background-size: cover;
   text-align: center; }
@@ -70,10 +68,10 @@ header {
     transition: all 0.3s ease; }
   header .barOpen:first-child {
     transform: rotate(45deg);
-    margin-top: 16px; }
+    margin-top: 1em; }
   header .barOpen:nth-child(2) {
     transform: rotate(-45deg);
-    margin-top: -3px; }
+    margin-top: -0.1875em; }
   header .barOpen:last-child {
     opacity: 0; }
   header #hamburgerIcon button {
@@ -91,7 +89,7 @@ header {
     height: 0vh;
     overflow: hidden; }
     header #mainNav ul {
-      margin-top: 10px; }
+      margin-top: 0.625em; }
       header #mainNav ul li {
         list-style-type: none; }
         header #mainNav ul li a {
@@ -159,7 +157,7 @@ header {
     border-left: none;
     border-top: 3px solid #f6c421;
     padding-left: 0;
-    padding-top: 13px; }
+    padding-top: 0.8125em; }
   .mainContent #secondaryNav, .mainContent #services {
     padding-bottom: 6.25em; }
     .mainContent #secondaryNav #navHeading, .mainContent #services #navHeading {
@@ -194,8 +192,8 @@ header {
   .mainContent #story {
     background-color: #648036; }
   .mainContent #mission {
-    padding-top: 50px;
-    padding-bottom: 50px; }
+    padding-top: 3.125em;
+    padding-bottom: 3.125em; }
     .mainContent #mission p {
       color: #5c5b5c; }
   .mainContent #beeGuardian {
@@ -207,21 +205,21 @@ header {
     font-size: 1.5em;
     font-weight: 700; }
   .mainContent .contactHeading {
-    letter-spacing: 1px;
-    margin-bottom: 25px;
+    letter-spacing: 0.0625em;
+    margin-bottom: 1.5625em;
     font-weight: 900; }
   .mainContent #map {
-    height: 400px;
+    height: 25em;
     z-index: 1; }
   .mainContent #addressInfo {
     background-color: #4a494a;
     color: #f6c421;
-    padding-top: 16px;
-    padding-bottom: 1px;
-    padding-left: 25px; }
+    padding-top: 1em;
+    padding-bottom: 0.0625em;
+    padding-left: 1.5625em; }
     .mainContent #addressInfo h1 {
       text-transform: uppercase;
-      font-size: 20px;
+      font-size: 1.25em;
       font-family: "Montserrat", sans-serif;
       font-weight: 700;
       margin-bottom: 0; }
@@ -238,23 +236,23 @@ header {
     .mainContent #contactForm form input, .mainContent #contactForm form textarea {
       box-shadow: none;
       border: 1px solid #dddddd;
-      padding-top: 20px;
-      padding-bottom: 20px;
-      padding-left: 20px;
-      padding-right: 20px; }
+      padding-top: 1.25em;
+      padding-bottom: 1.25em;
+      padding-left: 1.25em;
+      padding-right: 1.25em; }
       .mainContent #contactForm form input ::-webkit-input-placeholder, .mainContent #contactForm form textarea ::-webkit-input-placeholder {
         text-transform: capitalize; }
     .mainContent #contactForm form #submit {
       background: none;
       border: none;
-      letter-spacing: 2px;
+      letter-spacing: 0.125em;
       color: #f6c421;
       text-align: center;
       text-transform: uppercase;
-      padding: 15px;
+      padding: 0.9375em;
       display: block;
       font-family: "Montserrat", sans-serif;
-      font-size: 40px;
+      font-size: 2.5em;
       font-weight: 700;
       margin-left: auto;
       margin-right: auto; }
@@ -287,7 +285,7 @@ footer {
   .mainContent #services .service .price {
     text-transform: uppercase;
     text-align: center;
-    padding-bottom: 10px;
+    padding-bottom: 0.625em;
     font-size: 1em;
     font-weight: 700; }
   .mainContent #services .service .takeaway {
@@ -303,10 +301,10 @@ footer {
     color: #fff; }
 
 .mainContent .shopItem {
-  margin-top: 50px;
-  margin-bottom: 50px; }
+  margin-top: 3.125em;
+  margin-bottom: 3.125em; }
   .mainContent .shopItem:last-child {
-    margin-bottom: 80px; }
+    margin-bottom: 5em; }
 .mainContent .shopItemName {
   color: #f6c421; }
 .mainContent .shopPrice {
@@ -315,7 +313,7 @@ footer {
   background-color: #333;
   width: 35%;
   font-weight: 700;
-  padding: 5px 5px; }
+  padding: 0.3125em 0.3125em; }
 
 .mainContent #infobee {
   display: block;
@@ -324,14 +322,14 @@ footer {
   display: inline-block;
   text-align: center;
   width: 100%;
-  margin: 20px auto; }
+  margin: 1.25em auto; }
   .mainContent #info-btns .bee-btn {
-    width: 30px;
-    height: 30px;
+    width: 1.875em;
+    height: 1.875em;
     display: inline-block;
     border: solid 5px #f6c421;
     border-radius: 100%;
-    margin: 0 2px; }
+    margin: 0 0.125em; }
     .mainContent #info-btns .bee-btn:first-child {
       background-color: #f6c421; }
 .mainContent #callToAction {
@@ -339,8 +337,8 @@ footer {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: bottom center;
-  margin-top: 50px;
-  margin-bottom: 50px; }
+  margin-top: 3.125em;
+  margin-bottom: 3.125em; }
   .mainContent #callToAction p {
     text-align: center;
     text-transform: none; }
@@ -352,8 +350,8 @@ footer {
 .mainContent .hideText {
   display: none; }
 .mainContent #fact {
-  margin-top: 30px;
-  margin-bottom: 100px; }
+  margin-top: 1.875em;
+  margin-bottom: 6.25em; }
 
 .mainContent .cmsHeading {
   text-align: center; }
@@ -365,6 +363,6 @@ footer {
 .mainContent #contactForm .delete {
   color: #f00 !important;
   margin-left: 75% !important;
-  margin-top: -75px; }
+  margin-top: -4.6875em; }
 
 /*# sourceMappingURL=app.css.map */

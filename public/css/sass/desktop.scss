@@ -6,7 +6,7 @@ $bodyFonts: 'Open Sans', sans-serif;
 $yellow: #f6c421;
 $grey: #5c5b5c;
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 75em) {//1200/16
   html {
     body {
       //remove header bg images so parallax headers take over
@@ -17,16 +17,20 @@ $grey: #5c5b5c;
         background-size: cover;
         background-repeat: no-repeat;
       }
+
+      // background images on info blocks at desktop but not on mobile
+      // background images were conflicting with the readablility of the text
+      // at mobile size
       #storyBG {
         background-image: url('../img/home/beeHero.png');
         padding: {
-          top: 50px;
+          top: 3.125em;//50/16
         }
       }
       #beeBG {
         background-image: url('../img/home/servicesHero.png');
         padding: {
-          top: 50px;
+          top: 3.125em;//50/16
         }
       }
       #callToActionBG {
@@ -40,7 +44,6 @@ $grey: #5c5b5c;
       //header holds all the layers
       header {
         height: 100vh;
-        // overflow: hidden;
         position: relative;
       }
       //layers that each contain a different element for the parallax
@@ -186,13 +189,13 @@ $grey: #5c5b5c;
         border-left: solid 6px $yellow;
         border-top: none;
         padding: {
-          left: 20px;
+          left: 1.25em;//20/16
           top: 0;
         }
       }
       ul.sideBorder {
         padding: {
-          left: 40px;
+          left: 2.5em;//40/16
         }
       }
       //headings for most paragraphs
@@ -266,9 +269,9 @@ $grey: #5c5b5c;
         }
         #info-btns {
           .bee-btn {
-            width: 40px;
-            height: 40px;
-            margin: 0 10px;
+            width: 2.5em;//40/16
+            height: 2.5em;//40/16
+            margin: 0 0.625em;//10/16
           }
         }
       }
@@ -277,8 +280,8 @@ $grey: #5c5b5c;
 
       .shopItem {
         margin: {
-          top: 40px;
-          bottom: 40px;
+          top: 2.5em;//40/16
+          bottom: 2.5em;//40/16
         }
 
         .shopPrice {
@@ -300,10 +303,10 @@ $grey: #5c5b5c;
         form {
           input, textarea {
             padding: {
-              top: 30px;
-              bottom: 30px;
-              left: 30px;
-              right: 30px;
+              top: 1.875em;//30/16
+              bottom: 1.875em;//30/16
+              left: 1.875em;//30/16
+              right: 1.875em;//30/16
             }
             ::-webkit-input-placeholder {
               text-transform: capitalize;
@@ -347,7 +350,7 @@ $grey: #5c5b5c;
             width: 32%;
             text-align: center;
             margin: {
-              bottom: 10px;
+              bottom: 0.625em;//10/16
             }
           }
         }
