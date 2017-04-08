@@ -38,7 +38,7 @@
       <label for="productPrice">Product Price</label>
       <textarea name="productPrice" rows="8" cols="80">{{$autoFill[0]->product_price}}</textarea>
 
-      <input id="submit" class="cmsSubmit" type="submit">
+      <input id="submit" class="cmsSubmit" type="submit" value="submit">
     </form>
 
     <form class="column small-12 large-8 large-centered" action="deleteproduct" method="post">

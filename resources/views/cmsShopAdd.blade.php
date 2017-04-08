@@ -35,7 +35,7 @@
       <label for="productPrice">Product Price</label>
       <textarea name="productPrice" rows="8" cols="80"></textarea>
 
-      <input id="submit" type="submit">
+      <input id="submit" type="submit" value="submit">
     </form>
   </div>
 </section>

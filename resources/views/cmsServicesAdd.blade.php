@@ -41,7 +41,7 @@
       <label for="serviceBenefit">Service Benefits</label>
       <textarea name="serviceBenefit" rows="8" cols="80"></textarea>
 
-      <input id="submit" type="submit">
+      <input id="submit" type="submit" value="submit">
     </form>
   </div>
 </section>

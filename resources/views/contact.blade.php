@@ -48,7 +48,7 @@
              <textarea name="message" value="{{ old('msg') }}" rows=12 cols="80" placeholder="type message here"></textarea>
            </div>
            <div class="column small-12 small-centered">
-             <input id="submit" type="submit">
+             <input id="submit" type="submit" value="submit">
            </div>
          </div>
        </form>

@@ -44,7 +44,7 @@
       <label for="serviceBenefit">Service Benefits</label>
       <textarea name="serviceBenefit" rows="8" cols="80">{{$autoFill[0]->service_benefit}}</textarea>
 
-      <input id="submit" class="cmsSubmit" type="submit">
+      <input id="submit" class="cmsSubmit" type="submit" value="submit">
     </form>
 
     <form class="column small-12 large-8 large-centered" action="deleteservice" method="post">
