@@ -26,7 +26,9 @@
   @foreach ($services as $service)
     <section class="service columns large-6 small-10 small-centered large-uncentered">
       <div class="iconBlock column small-12 large-10 large-centered">
+        @if($service->services_photo)
         <img src="img/icons/{{$service->services_photo}}" alt="Beekeeper Icon">
+        @endif
         <h2 class="iconBlockHeading">{{$service->service_name}}</h2>
         <h4 class="price">{{$service->service_price}} {{$service->service_visits}}
         </h4>
