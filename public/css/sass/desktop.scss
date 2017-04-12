@@ -298,20 +298,9 @@ $grey: #5c5b5c;
       #readMore {
         display: none;
       }
-
+      //contact page
       #contactForm {
         form {
-          input, textarea {
-            padding: {
-              top: 1.875em;//30/16
-              bottom: 1.875em;//30/16
-              left: 1.875em;//30/16
-              right: 1.875em;//30/16
-            }
-            ::-webkit-input-placeholder {
-              text-transform: capitalize;
-            }
-          }
           .paddingFixLeft {
             padding: {
               left: 0.9375em;//15/16

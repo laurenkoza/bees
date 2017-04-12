@@ -144,13 +144,6 @@
     display: block; }
   html body .mainContent #readMore {
     display: none; }
-  html body .mainContent #contactForm form input, html body .mainContent #contactForm form textarea {
-    padding-top: 1.875em;
-    padding-bottom: 1.875em;
-    padding-left: 1.875em;
-    padding-right: 1.875em; }
-    html body .mainContent #contactForm form input ::-webkit-input-placeholder, html body .mainContent #contactForm form textarea ::-webkit-input-placeholder {
-      text-transform: capitalize; }
   html body .mainContent #contactForm form .paddingFixLeft {
     padding-left: 0.9375em; }
   html body .mainContent #contactForm form .paddingFixRight {

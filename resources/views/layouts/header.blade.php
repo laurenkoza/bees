@@ -8,7 +8,7 @@
       <div id="stickyLogo" class="column large-2 small-6 hidden">
         <a href="index"><img src="img/icons/logo_horizontal.svg" alt="Heff's Hives logo"></a>
       </div>
-      <div id="hamburgerIcon" class="column small-2 small-offset-4 hidden">
+      <div id="hamburgerIcon" class="column small-2 small-offset-4 large-offset-8 hidden">
         <button type="button">
           <div class="hamburgerBar"></div>
           <div class="hamburgerBar"></div>
